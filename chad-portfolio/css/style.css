@@ -107,14 +107,6 @@
         line-height: 24px;
     }
     
-    .arrow-left {
-        width: 0;
-        height: 0;
-        border-left: 37px solid blue;
-        border-top: 18px solid transparent;
-        border-bottom: 19px solid transparent;
-    }
-    
     .font-wght-regular {
         font-weight: 400;
     }
@@ -229,6 +221,10 @@
         padding-bottom: 100px !important;
     }
     
+    .p-top-24 {
+        padding-top: 24px;
+    }
+    
     .vh-center {
         display: flex;
         justify-content: center;
@@ -245,6 +241,43 @@
     
     .mt-18 {
         margin-top: 18px !important;
+    }
+    
+    .mt-24 {
+        margin-top: 24px;
+    }
+    
+    .mt-26 {
+        margin-top: 26px;
+    }
+    
+    .mt-102 {
+        margin-top: 102px;
+    }
+    
+    .mt-83 {
+        margin-top: 83px;
+    }
+    
+    .mt-30 {
+        margin-top: 30px;
+    }
+    
+    .mt-60 {
+        margin-top: 60px;
+    }
+    
+    .mt-40 {
+        margin-top: 40px;
+    }
+    
+    .w-729 {
+        width: 729px;
+        max-width: 100%;
+    }
+    
+    .mb-102 {
+        margin-bottom: 102px;
     }
     
     .mb-8 {
@@ -377,9 +410,13 @@
     }
     /* case-2 */
     
+    .program-manager.case-2 {
+        padding: 55px 0;
+    }
+    
     .program-manager.case-2 .sec-inner {
         background: url(../imgs/case2-imgs/C2-Intro-Illustration-3.svg) no-repeat bottom right;
-        background-size: contain;
+        background-size: cover;
     }
     /* Layout */
     
@@ -448,23 +485,21 @@
         margin: 0px 20px;
     }
     
-    .row-to-col {
+    .row-2-col {
         display: flex;
+        flex-wrap: wrap;
     }
     
-    .row-to-col .col {
-        width: 50%;
-        max-width: 100%;
-        padding-right: 30px;
-        align-items: center;
+    .row-2-col .col {
+        width: calc(50% - 26px);
     }
     
-    .row-to-col .col:last-child {
-        padding-right: 0px;
+    .row-2-col .col:nth-child(odd) {
+        margin-right: 26px;
     }
     
-    .row-to-col .col p {
-        padding-top: 24px;
+    .row-2-col .col:nth-child(even) {
+        margin-left: 26px;
     }
     
     .reflection-content p {
@@ -491,4 +526,20 @@
         height: 69px;
         width: 69px;
         transform: rotate(90deg);
+        opacity: 0.5;
+    }
+    
+    .synthesis-fist-row {
+        width: 669px;
+        max-width: 100%;
+    }
+    /* media quries */
+    
+    @media only screen and (max-width: 991px) {
+        .tab-link-inner {
+            width: 353px;
+        }
+        .case-study-header {
+            padding: 0px 39px 103px 39px;
+        }
     }
