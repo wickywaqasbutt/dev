@@ -14,7 +14,7 @@
         font-size: 35px;
         font-weight: bold;
         letter-spacing: 0;
-        line-height: 47px;
+        line-height: 45px;
     }
     
     .h2 {
@@ -66,7 +66,12 @@
         font-size: 20px;
         font-weight: 600;
         letter-spacing: 0;
-        line-height: 24px;
+        line-height: 26px;
+        margin-bottom: 24px;
+    }
+    
+    .para-sm:last-child {
+        margin-bottom: 13px;
     }
     
     a {
@@ -80,7 +85,7 @@
     
     .bordered-heading {
         position: relative;
-        padding-bottom: 35px;
+        padding-bottom: 25px;
     }
     
     .bordered-heading::after {
@@ -108,6 +113,10 @@
         border-left: 37px solid blue;
         border-top: 18px solid transparent;
         border-bottom: 19px solid transparent;
+    }
+    
+    .font-wght-regular {
+        font-weight: 400;
     }
     /* 2. Colors */
     
@@ -143,6 +152,10 @@
         color: #fff;
     }
     
+    .color-light-pink {
+        color: #B75BC5;
+    }
+    
     .bg-white {
         background-color: #fff !important;
     }
@@ -156,6 +169,10 @@
     }
     /* 3. Helper classes */
     
+    .d-none {
+        display: none;
+    }
+    
     .d-flex {
         display: flex;
     }
@@ -165,7 +182,7 @@
     }
     
     .external-links {
-        margin-top: 48px;
+        margin-top: 46px;
         width: 354px;
         max-width: 100%;
         margin-bottom: 38px;
@@ -183,7 +200,11 @@
     .external-links li {
         background: url(../imgs/external-links.svg) no-repeat;
         padding-left: 48px;
-        margin-bottom: 20px;
+        margin-bottom: 31px;
+    }
+    
+    .external-links li:last-child {
+        margin-bottom: 44px !important;
     }
     
     .external-links.icon-black li {
@@ -194,6 +215,10 @@
     
     .p-t-0 {
         padding-top: 0 !important;
+    }
+    
+    .p-t-8 {
+        padding: 8px;
     }
     
     .p-t-100 {
@@ -215,11 +240,27 @@
     }
     
     .mt-8 {
-        margin-top: 8px;
+        margin-top: 8px !important;
+    }
+    
+    .mt-18 {
+        margin-top: 18px !important;
     }
     
     .mb-8 {
-        margin-bottom: 8px;
+        margin-bottom: 8px !important;
+    }
+    
+    .mt-55 {
+        margin-top: 55px;
+    }
+    
+    .mb-57 {
+        margin-bottom: 57px;
+    }
+    
+    .text-upper {
+        text-transform: uppercase;
     }
     /* components */
     
@@ -237,7 +278,7 @@
         display: inline-block;
         background: rgba(217, 217, 217, .01);
         width: 50%;
-        padding: 24px;
+        padding: 29px;
     }
     
     .tab-link.active {
@@ -276,7 +317,7 @@
     }
     
     .case-study-header {
-        padding-bottom: 100px;
+        padding-bottom: 103px;
     }
     
     .case-study-title {
@@ -287,24 +328,34 @@
     }
     
     .case-study-para {
-        margin-top: 34px;
+        margin-top: 32px;
         width: 825px;
         max-width: 100%;
     }
     
     .c-card-sm {
-        width: 350px;
+        width: 360px;
         max-width: 100%;
         margin-right: 30px;
     }
     
+    .program-manager .c-card-sm {
+        width: 410px;
+        margin-right: 0px;
+        padding-right: 50px;
+    }
+    
     .c-card-sm p {
-        margin-top: 20px;
+        margin-top: 24px;
     }
     
     .card-one-third .flex-row {
         padding-top: 100px;
         padding-bottom: 100px;
+    }
+    
+    .card-one-third .flex-row:last-child {
+        padding-bottom: 0px !important;
     }
     
     .program-manager .sec-inner {
@@ -314,6 +365,16 @@
     
     .program-manager .quoted-text {
         margin-top: 30px;
+    }
+    
+    .program-manager .c-card-sm p {
+        margin-top: 38px !important;
+    }
+    /* case-2 */
+    
+    .program-manager.case-2 .sec-inner {
+        background: url(../imgs/case2-imgs/C2-Intro-Illustration-3.svg) no-repeat bottom right;
+        background-size: contain;
     }
     /* Layout */
     
@@ -340,18 +401,18 @@
     }
     
     .sec-card {
-        padding-top: 100px;
-        padding-bottom: 100px;
+        padding-top: 102px;
+        padding-bottom: 102px;
     }
     /* Intro-sec styles */
     
     .intro-sec {
-        padding-bottom: 100px;
+        padding-bottom: 103px;
     }
     
     .intro-top {
         position: relative;
-        padding-bottom: 170px;
+        padding-bottom: 205px;
     }
     
     .intro-img {
@@ -371,7 +432,7 @@
     }
     
     .slider-controls {
-        margin-top: 24px;
+        margin-top: 28px;
         padding: 12px 0px;
     }
     
@@ -406,8 +467,8 @@
     }
     
     .page-navigator {
-        padding-top: 56px;
-        padding-bottom: 56px;
+        padding-top: 55px;
+        padding-bottom: 55px;
     }
     
     .tab-inners {
