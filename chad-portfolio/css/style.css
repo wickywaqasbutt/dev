@@ -712,6 +712,9 @@
         .p-b-100 {
             padding-bottom: 58px !important;
         }
+        .c-2-heading {
+            margin-top: 0 !important;
+        }
         .intro-img {
             width: 100%;
         }
@@ -735,6 +738,12 @@
             position: static;
             margin-top: 18px;
         }
+        .intro-social-links {
+            justify-content: flex-start !important;
+        }
+        .intro-social-links a {
+            margin-right: 24px !important;
+        }
         .row-2-col .col {
             width: 100%;
             margin-left: 0px !important;
@@ -747,6 +756,9 @@
             margin-bottom: 13px;
             line-height: 25px;
         }
+        .tabs-header .tab-link:first-child {
+            padding-right: 89px;
+        }
         .case-study-title {
             width: 100%;
         }
@@ -755,7 +767,7 @@
             text-align-last: left;
         }
         .intro-top .intro-img {
-            width: calc(100% + 28px);
+            width: calc(100% + 29px);
             margin-left: -15px;
             margin-right: -15px;
         }
@@ -799,6 +811,12 @@
             background: none;
             padding: 20px 0px 52px 0px;
         }
+        .d-block {
+            display: block !important;
+        }
+        .chip-heading {
+            font-size: 35px;
+        }
         .sec-card {
             padding-top: 55px;
             padding-bottom: 55px;
@@ -821,8 +839,18 @@
         .mobile-controls {
             margin-top: 0 !important;
         }
+        .project-manager-para {
+            margin-top: 24px;
+        }
+        .point-mapping {
+            padding-top: 47px;
+        }
+        .synthesis-sec {
+            padding-top: 59px !important;
+        }
         .synthesis-fist-row .external-links {
-            margin-top: 30px;
+            margin-top: 26px;
+            margin-bottom: 59px;
         }
         .concept-car-product {
             margin-top: 45px;
@@ -844,8 +872,8 @@
         .presentation-link {
             margin-top: 32px !important;
         }
-        .reflection-stakeholder {
-            padding-bottom: 102px;
+        .reflection-heading {
+            margin-bottom: 45px !important;
         }
         .next-up {
             margin-bottom: 26px;
@@ -865,6 +893,13 @@
             margin-left: auto;
             margin-right: auto;
             padding-bottom: 56px;
+        }
+        .page-navigator {
+            padding-top: 45px;
+            padding-bottom: 45px;
+        }
+        .footer-social-link {
+            padding-bottom: 100px;
         }
         .social-links {
             justify-content: space-evenly;
