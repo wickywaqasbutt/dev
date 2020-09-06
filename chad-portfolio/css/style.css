@@ -259,6 +259,10 @@
         margin-top: 83px;
     }
     
+    .mt-28 {
+        margin-top: 28px;
+    }
+    
     .mt-30 {
         margin-top: 30px;
     }
@@ -309,6 +313,8 @@
     .c-card-md {
         padding: 72px 48px;
         width: 475px;
+        max-width: 100%;
+        z-index: 2;
     }
     /* Tabs */
     
@@ -415,8 +421,18 @@
     }
     
     .program-manager.case-2 .sec-inner {
-        background: url(../imgs/case2-imgs/C2-Intro-Illustration-3.svg) no-repeat bottom right;
-        background-size: cover;
+        background: none;
+        position: relative;
+    }
+    
+    .program-manager.case-2 .bg-img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        z-index: 1;
     }
     /* Layout */
     
@@ -533,11 +549,23 @@
         width: 669px;
         max-width: 100%;
     }
+    
+    .mvp-sizing {
+        margin: 102px 0;
+        width: 729px;
+        max-width: 100%;
+    }
     /* Responsive Styles */
     
     @media only screen and (max-width: 1200px) {
+        .container {
+            width: 91%;
+        }
         .flex-row {
             justify-content: center;
+        }
+        .program-manager.case-2 {
+            padding: 0 0;
         }
     }
     
@@ -554,6 +582,15 @@
         }
         .c-card-sm {
             width: 100%;
+        }
+        .row-2-col .col:nth-child(odd) {
+            margin-right: 18px;
+        }
+        .row-2-col .col:nth-child(even) {
+            margin-left: 10px;
+        }
+        .row-2-col .col {
+            margin-bottom: 30px;
         }
     }
     
@@ -598,7 +635,7 @@
         .container,
         .sm-container {
             width: 689px;
-            max-width: 100%;
+            max-width: 91%;
         }
         .tab-link-inner {
             width: 260px;
@@ -607,7 +644,7 @@
             flex-wrap: wrap;
         }
         .next-case-info {
-            width: 20%;
+            width: 32%;
         }
         .sec-card {
             padding-bottom: 88px;
@@ -622,9 +659,39 @@
         .card-one-third .c-card-sm {
             margin-right: 0px;
         }
+        .tab2 .case-study-header {
+            padding: 0px 0px 63px 0px;
+        }
+        .concept-images>.col {
+            width: 100%;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            margin-bottom: 0;
+        }
+        .concept-car-imgs {
+            margin-top: 0;
+        }
+        .mvp-sizing {
+            margin: 92px 0;
+        }
+        .program-manager.case-2 .c-card-md {
+            width: 100%;
+            padding: 48px 0 0 0;
+        }
+        .program-manager.case-2 .sec-inner {
+            padding-top: 0;
+        }
+        .program-manager.case-2 .bg-img {
+            position: static;
+            display: block;
+        }
     }
     
     @media only screen and (max-width: 600px) {
+        .usability-text .external-links {
+            margin-top: 34px;
+            margin-bottom: 20px;
+        }
         .container,
         .sm-container {
             width: 689px;
@@ -635,6 +702,15 @@
         }
         .font-12 {
             font-size: 12px;
+        }
+        .p-t-100 {
+            padding-top: 68px !important;
+        }
+        .card-one-third .flex-row {
+            padding-top: 62px;
+        }
+        .p-b-100 {
+            padding-bottom: 58px !important;
         }
         .intro-img {
             width: 100%;
@@ -664,7 +740,7 @@
             margin-left: 0px !important;
             margin-left: 0px !important;
         }
-        .row-2-col .col:last-child {
+        .usability-text .col:last-child {
             margin-top: 60px;
         }
         .tab-link .tab-link-inner .h1 {
@@ -698,5 +774,99 @@
             transform: rotate(90deg);
             opacity: 0.5;
             margin-left: 18px;
+        }
+        .case-study-header {
+            padding: 0px 0px 0px 0px;
+        }
+        .case-study-para {
+            margin-top: 18px;
+        }
+        .card-one-third {
+            background: #fff !important;
+        }
+        .planing-img.stakeholder-img {
+            margin-left: -26px;
+            margin-right: 26px;
+            width: calc(100% + 46px);
+        }
+        .bordered-heading::after {
+            width: 120px;
+        }
+        .program-manager .sec-inner {
+            background: none;
+            padding: 20px 0px 52px 0px;
+        }
+        .sec-card {
+            padding-top: 55px;
+            padding-bottom: 55px;
+        }
+        .arrow-left img {
+            width: 37px;
+        }
+        .arrow-right img {
+            width: 37px;
+        }
+        .slider-controls {
+            padding: 12px 0px;
+        }
+        .usability-text .col:nth-child(odd) {
+            margin-right: 0;
+        }
+        .external-links li:last-child {
+            margin-bottom: 19px !important;
+        }
+        .mobile-controls {
+            margin-top: 0 !important;
+        }
+        .synthesis-fist-row .external-links {
+            margin-top: 30px;
+        }
+        .concept-car-product {
+            margin-top: 45px;
+        }
+        .concept-car-imgs {
+            background: #F4F4F4;
+            padding: 3px;
+            margin-top: 40px;
+        }
+        .concept-car-imgs img {
+            margin-top: 13px;
+        }
+        .concept-car-imgs img {
+            margin-top: 0;
+        }
+        .mvp-sizing {
+            margin: 58px 0px;
+        }
+        .presentation-link {
+            margin-top: 32px !important;
+        }
+        .reflection-stakeholder {
+            padding-bottom: 102px;
+        }
+        .next-up {
+            margin-bottom: 26px;
+        }
+        .mobile-fluid {
+            width: 100%;
+            max-width: 100%;
+        }
+        .c-card-md {
+            padding: 23px 15px 56px 15px;
+        }
+        .mobile-p-b-0 {
+            padding-bottom: 0 !important;
+        }
+        .program-manager.case-2 .c-card-md {
+            width: 91%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 56px;
+        }
+        .social-links {
+            justify-content: space-evenly;
+        }
+        .social-links a {
+            margin-right: 0;
         }
     }
