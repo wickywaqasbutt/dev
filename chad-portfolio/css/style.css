@@ -781,6 +781,9 @@
         .case-study-para {
             margin-top: 18px;
         }
+        .case-study-header .case-study-para {
+            margin-top: 14px;
+        }
         .card-one-third {
             background: #fff !important;
         }
