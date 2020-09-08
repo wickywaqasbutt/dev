@@ -21,7 +21,6 @@
         color: #FFFFFF;
         font-family: Montserrat;
         font-size: 30px;
-        font-weight: 600;
         letter-spacing: 0;
         line-height: 37px;
     }
@@ -64,7 +63,7 @@
     .para-sm {
         font-family: Montserrat;
         font-size: 20px;
-        font-weight: 600;
+        font-weight: 500;
         letter-spacing: 0;
         line-height: 26px;
         margin-bottom: 24px;
@@ -692,10 +691,10 @@
             margin-top: 34px;
             margin-bottom: 20px;
         }
-        .container,
-        .sm-container {
-            width: 280px;
+        .mobile-container {
+            width: 689px !important;
             max-width: 91%;
+            margin: 0px 19px;
         }
         .font-20 {
             font-size: 20px;
@@ -799,11 +798,6 @@
         .card-one-third {
             background: #fff !important;
         }
-        .planing-img.stakeholder-img {
-            margin-left: -26px;
-            margin-right: 26px;
-            width: calc(100% + 46px);
-        }
         .bordered-heading::after {
             width: 120px;
         }
@@ -906,5 +900,12 @@
         }
         .social-links a {
             margin-right: 0;
+        }
+        .stakeholder-mapping .card-one-third {
+            overflow: hidden;
+        }
+        .stakeholder-mapping .container {
+            width: 100%;
+            max-width: 100%;
         }
     }
