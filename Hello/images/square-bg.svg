@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 604" width="1920" height="604">
+	<defs>
+		<image width="1920" height="604" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAAJcAQMAAAAiqCt2AAAAAXNSR0IB2cksfwAAAANQTFRF////p8QbyAAAAKRJREFUeJztwTEBAAAAwqD1T20Gf6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB+Azi6AAEhqB2rAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ff0000 } 
+		.shp1 { fill: #f8f8f8 } 
+	</style>
+	<use id="Background" href="#img1" x="0" y="0" />
+	<path id="Shape 1" class="shp0" d="" />
+	<path id="Shape 2" class="shp1" d="M0 0L1920 132L1920 604L0 418L0 0Z" />
+</svg>
