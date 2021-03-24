@@ -1,0 +1,455 @@
+// Google fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+//  colors
+$color-white: #fff;
+$color-orange: #f47a5d;
+$color-darkorange: #f3694c;
+$color-blue: #3b6bb1;
+$color-lightgreen: #e2f6f3;
+$color-lightblue: #44678f;
+$color-mediumblue: #5670ab;
+$color-gray: #b4c2d2;
+$color-lightgray: #a8b6c0;
+$color-green: #53a5ad;
+$color-halfblue: #274b94;
+//media quries
+$media-xl: "only screen and (max-width :1600px)";
+$media-lg: "only screen and (max-width :1376px)";
+$media-md: "only screen and (max-width :1288px)";
+$media-desktop: "only screen and (max-width : 992px)";
+$media-tab: "only screen and (max-width : 768px)";
+$media-mobile: "only screen and (max-width : 600px)";
+$media-mobile-sm: "only screen and (max-width : 480px)";
+// Typography
+.display-font {
+    color: $color-blue;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body-copy {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.sec-font {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+body {
+    @extend .body-copy;
+    line-height: 1.4;
+    font-size: 17px;
+}
+
+@for $index from 1 through 6 {
+    h#{$index} {}
+}
+
+h1 {
+    font-size: 34px;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sub-title {
+    font-size: 13px;
+    letter-spacing: 1.1px;
+    font-weight: 700;
+}
+
+.sec-heading {
+    font-weight: 700;
+    letter-spacing: -1.5px;
+    padding-top: 0;
+    @media #{$media-desktop} {
+        font-size: 31px;
+    }
+}
+
+// Header
+.site-header {
+    padding: 15px 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    &__grid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__col {
+        &--left {
+            a {
+                width: 171px;
+                display: inline-block;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        &--middle {
+            flex: 1;
+            margin-left: 60px;
+        }
+        &--inner {
+            display: flex;
+            align-items: flex-start;
+        }
+    }
+    &__nav {
+        &--list {
+            display: inline-block;
+            margin-right: 36px;
+        }
+        &--link {
+            color: $color-blue;
+            font-weight: 500;
+        }
+    }
+    &__right {
+        &--inner {
+            display: flex;
+        }
+    }
+    &__icon {
+        width: 20px;
+    }
+    &__address {
+        background-image: url('/images/location-icon.svg');
+        background-size: 20px;
+        background-position: 30px 1px;
+        background-repeat: no-repeat;
+        padding-left: 30px;
+        text-align: right;
+        padding-right: 65px;
+        color: $color-blue;
+        font-weight: 500;
+        width: 318px;
+        max-width: 100%;
+    }
+    &__contact {
+        padding-left: 65px;
+        background-image: url('/images/orange-call-icon.svg');
+        background-size: 20px;
+        background-position: 58px 3px;
+        background-repeat: no-repeat;
+        border-left: 1px solid $color-blue;
+        &--num {
+            text-align: right;
+            color: $color-blue;
+            font-weight: 500;
+        }
+    }
+    .header-cta {
+        background-color: $color-orange;
+        border: 0px;
+        padding: 8px 27px;
+        border-radius: 3px;
+        color: $color-white;
+        font-size: 12px;
+        cursor: pointer;
+        margin-top: 3px;
+    }
+}
+
+//Component
+.three-col-grid__col {
+    display: flex;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: minmax(150px, auto);
+    grid-gap: 1em;
+    justify-content: center;
+    align-items: stretch;
+    column-gap: 50px;
+}
+
+.services-section {
+    padding: 100px 0px;
+}
+
+.icon-button {
+    display: inline-block;
+    &__inner {
+        display: flex;
+        align-items: center;
+        background: $color-lightgreen;
+        border-radius: 32px;
+        padding: 30px 20px;
+        min-height: 111px;
+    }
+    &__icon {
+        margin-right: 20px;
+    }
+    &__text {
+        font-size: 14px;
+        color: $color-blue;
+        font-weight: 500;
+    }
+}
+
+.disease-box {
+    border: 1px solid $color-gray;
+    background-image: url(/images/Faq-bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+    &__header {
+        background: linear-gradient(90deg, #57cada 86%, #5ad1e4 100%);
+        padding: 0px 63px;
+        &--title {
+            background-image: url(/images/Tube-Shadow-Icon.svg);
+            background-position: left;
+            background-repeat: no-repeat;
+            background-size: 80px;
+            padding: 25px 0px 25px 80px;
+        }
+    }
+    &__text {
+        padding: 0px 63px;
+        p {
+            margin: 39px 0px 48px 0px;
+        }
+    }
+    &__stdtable {
+        margin: 18px 63px 12px 63px;
+    }
+    &__btn {
+        margin: 40px 0px;
+        .sec-button {
+            justify-content: flex-end;
+            &__icon {
+                img {
+                    width: 42px;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.faq-accordian {
+    padding: 0px 15px 0px 63px;
+    margin-top: 70px;
+}
+
+.faq-header {
+    background-image: url(/images/Faq-Icon.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 40px;
+    line-height: 44px;
+    &__title {
+        padding-left: 70px;
+        color: $color-halfblue;
+    }
+}
+
+.faq-accordians {
+    &.first-child {}
+    .faqTitle {
+        background-image: url(/images/orange-faq.svg);
+        background-repeat: no-repeat;
+        background-position: 0 4px;
+        background-size: 11px;
+        padding: 0px 30px;
+        margin-top: 25px;
+        font-weight: 500;
+        cursor: pointer;
+        &.first-child {
+            margin-top: 45px;
+        }
+    }
+    .faqAnswer {
+        padding: 10px 30px;
+    }
+}
+
+// helper classes
+.text-orange {
+    color: $color-darkorange;
+}
+
+.text-blue {
+    color: $color-blue;
+}
+
+.text-white {
+    color: $color-white;
+}
+
+// table
+.std-table {
+    border-collapse: collapse;
+    &__th {
+        border: 1px solid $color-gray;
+        color: $color-blue;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 10px 6px;
+    }
+    &__td {
+        border: 1px solid $color-gray;
+        color: $color-green;
+        font-size: 12px;
+        padding: 10px 10px 12px 15px;
+    }
+    &__list {
+        margin-left: 9px;
+    }
+    &__table-list {
+        list-style-type: decimal;
+        margin-bottom: 10px;
+    }
+}
+
+.footer-cta {
+    background-color: $color-halfblue;
+    padding: 50px 0px;
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__call {
+        display: flex;
+        align-items: center;
+    }
+    &__number {
+        color: $color-white;
+        margin-left: 8px;
+    }
+    &__btn {
+        color: $color-white;
+    }
+}
+
+// Layout
+.hero-section {
+    padding-top: 160px;
+    &__image {
+        padding-left: 6vw;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+.d-block {
+    display: block;
+}
+
+.container-fluid {
+    max-width: 100%;
+    margin: 0px auto;
+    padding: 0px 25px;
+}
+
+.container {
+    max-width: 1177px;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+    &--md {
+        max-width: 1150px;
+    }
+    &--lg {
+        max-width: 1688px;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media #{$media-tab} {
+        display: block;
+    }
+}
+
+//flex-center
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// buttons
+// std button
+.sec-button {
+    display: flex;
+    align-items: center;
+    &__icon {
+        margin-right: 25px;
+    }
+    &__text {
+        background-color: $color-lightgreen;
+        font-size: 14px;
+        color: $color-blue;
+        padding: 18px 20px;
+        border-radius: 12px;
+        font-weight: 500;
+    }
+}
+
+* {
+    outline: none;
+}
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari/Edge */
+    color: #606060;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #606060;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #606060;
+}

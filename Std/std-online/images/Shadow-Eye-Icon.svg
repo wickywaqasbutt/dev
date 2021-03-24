@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62 41" width="62" height="41">
+	<defs>
+		<linearGradient id="grd1" gradientUnits="userSpaceOnUse"  x1="-5.645" y1="28.07" x2="71.689" y2="-4.93">
+			<stop offset="0.054" stop-color="#313639"  />
+			<stop offset="1" stop-color="#ffffff"  />
+		</linearGradient>
+		<linearGradient id="grd2" gradientUnits="userSpaceOnUse"  x1="0.435" y1="-0.551" x2="39.637" y2="-0.551">
+			<stop offset="0" stop-color="#f3f5f5"  />
+			<stop offset="0.768" stop-color="#d0d7d8"  />
+			<stop offset="1" stop-color="#aebabd"  />
+		</linearGradient>
+		<linearGradient id="grd3" gradientUnits="userSpaceOnUse"  x1="1.635" y1="17.116" x2="13.557" y2="17.116">
+			<stop offset="0" stop-color="#1d54ac"  />
+			<stop offset="0.313" stop-color="#417bc2"  />
+			<stop offset="1" stop-color="#1d54ac"  />
+		</linearGradient>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { opacity: 0.169;mix-blend-mode: multiply;fill: url(#grd1) } 
+		.shp1 { fill: url(#grd2) } 
+		.shp2 { fill: #2f6cba } 
+		.shp3 { fill: url(#grd3) } 
+		.shp4 { fill: #293139 } 
+	</style>
+	<path id="&lt;Path&gt;" class="shp0" d="M54.62 22.93C54.63 22.92 54.63 22.92 54.64 22.91C59.14 18.41 61.93 13.91 61.93 10.47C61.93 3.6 50.78 3.6 37.04 10.47C30.16 13.91 23.94 18.41 19.44 22.91C19.43 22.92 19.43 22.92 19.42 22.93C19.24 23.11 19.08 23.28 18.91 23.46C14.73 27.78 12.14 32.06 12.14 35.36C12.14 42.23 23.29 42.23 37.04 35.36C43.63 32.06 49.61 27.78 54.06 23.46C54.26 23.28 54.44 23.11 54.62 22.93Z" />
+	<path id="&lt;Path&gt;" class="shp1" d="M39.64 19.97C39.64 19.97 39.64 19.96 39.64 19.96C39.64 14.94 37.72 9.92 33.9 6.1C26.24 -1.56 13.83 -1.56 6.18 6.1C2.35 9.92 0.44 14.94 0.44 19.96C0.44 19.96 0.44 19.97 0.44 19.97C0.44 20.17 0.45 20.37 0.46 20.57C0.61 25.38 2.5 30.14 6.18 33.82C13.83 41.47 26.24 41.47 33.9 33.82C37.57 30.14 39.46 25.38 39.61 20.57C39.63 20.37 39.64 20.17 39.64 19.97Z" />
+	<path id="&lt;Path&gt;" class="shp2" d="M7.9 18.05C11.51 20.14 14.43 25.21 14.43 29.38C14.43 33.55 11.51 35.24 7.9 33.15C4.28 31.07 1.36 26 1.36 21.83C1.36 17.66 4.28 15.97 7.9 18.05Z" />
+	<path id="&lt;Path&gt;" class="shp3" d="M7.6 18.81C10.89 20.71 13.56 25.33 13.56 29.13C13.56 32.93 10.89 34.47 7.6 32.57C4.3 30.67 1.63 26.05 1.63 22.25C1.63 18.45 4.3 16.9 7.6 18.81Z" />
+	<path id="&lt;Path&gt;" class="shp4" d="M6.48 22.84C8.05 23.75 9.33 25.96 9.33 27.78C9.33 29.6 8.05 30.34 6.48 29.43C4.9 28.52 3.62 26.3 3.62 24.48C3.62 22.66 4.9 21.93 6.48 22.84Z" />
+</svg>

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 43" width="28" height="43">
+	<defs>
+		<linearGradient id="grd1" gradientUnits="userSpaceOnUse"  x1="2.058" y1="-0.338" x2="27.213" y2="-0.338">
+			<stop offset="0" stop-color="#417bc2"  />
+			<stop offset="0.639" stop-color="#5ad1e4"  />
+			<stop offset="1" stop-color="#417bc2"  />
+		</linearGradient>
+		<linearGradient id="grd2" gradientUnits="userSpaceOnUse"  x1="5.712" y1="16.899" x2="16.218" y2="16.899">
+			<stop offset="0" stop-color="#1d54ac"  />
+			<stop offset="0.313" stop-color="#417bc2"  />
+			<stop offset="1" stop-color="#1d54ac"  />
+		</linearGradient>
+		<linearGradient id="grd3" gradientUnits="userSpaceOnUse"  x1="5.712" y1="20.035" x2="16.218" y2="20.035">
+			<stop offset="0" stop-color="#1d54ac"  />
+			<stop offset="0.313" stop-color="#417bc2"  />
+			<stop offset="1" stop-color="#1d54ac"  />
+		</linearGradient>
+		<linearGradient id="grd4" gradientUnits="userSpaceOnUse"  x1="5.712" y1="23.17" x2="16.218" y2="23.17">
+			<stop offset="0" stop-color="#1d54ac"  />
+			<stop offset="0.313" stop-color="#417bc2"  />
+			<stop offset="1" stop-color="#1d54ac"  />
+		</linearGradient>
+		<linearGradient id="grd5" gradientUnits="userSpaceOnUse"  x1="5.708" y1="26.27" x2="13.639" y2="26.27">
+			<stop offset="0" stop-color="#1d54ac"  />
+			<stop offset="0.313" stop-color="#417bc2"  />
+			<stop offset="1" stop-color="#1d54ac"  />
+		</linearGradient>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: url(#grd1) } 
+		.shp1 { fill: #5ad1e4 } 
+		.shp2 { fill: #ffffff } 
+		.shp3 { fill: #dee4e5 } 
+		.shp4 { fill: url(#grd2) } 
+		.shp5 { fill: url(#grd3) } 
+		.shp6 { fill: url(#grd4) } 
+		.shp7 { fill: url(#grd5) } 
+		.shp8 { fill: #ff5529 } 
+		.shp9 { fill: #e0341b } 
+		.shp10 { fill: #ff682c } 
+	</style>
+	<g id="&lt;Group&gt;">
+		<path id="&lt;Path&gt;" class="shp0" d="M23.03 9.62L8.5 1.22C7.35 0.56 6.3 0.5 5.54 0.94L2.06 2.95C2.82 2.51 3.86 2.57 5.01 3.24L19.55 11.63C21.85 12.96 23.73 16.22 23.73 18.87L23.73 39.95C23.73 41.28 23.26 42.21 22.5 42.65L25.98 40.64C26.74 40.2 27.21 39.27 27.21 37.94L27.21 16.86C27.21 14.2 25.33 10.94 23.03 9.62Z" />
+		<path id="&lt;Path&gt;" class="shp1" d="M23.73 39.95C23.73 41.28 23.26 42.21 22.5 42.65C21.74 43.09 20.7 43.03 19.55 42.37L5.01 33.97C2.71 32.65 0.83 29.39 0.83 26.73L0.83 5.65C0.83 4.32 1.3 3.39 2.06 2.95C2.82 2.51 3.86 2.57 5.01 3.24L19.55 11.63C21.85 12.96 23.73 16.22 23.73 18.87L23.73 39.95Z" />
+		<g id="&lt;Group&gt;">
+			<path id="&lt;Path&gt;" class="shp2" d="M5.74 30.66C4.71 30.07 3.88 28.62 3.88 27.44L3.88 11.55C3.88 10.96 4.09 10.54 4.42 10.35C4.76 10.15 5.22 10.18 5.74 10.48L18.67 17.94C19.69 18.53 20.53 19.98 20.53 21.16L20.53 37.05C20.53 37.65 20.32 38.06 19.98 38.26C19.65 38.45 19.18 38.42 18.67 38.13L5.74 30.66Z" />
+			<path id="&lt;Path&gt;" class="shp3" d="M18.67 17.94L5.74 10.48C5.22 10.18 4.76 10.15 4.42 10.35L3.18 11.06C3.52 10.87 3.99 10.9 4.5 11.19L17.43 18.66C18.45 19.25 19.29 20.7 19.29 21.88L19.29 37.77C19.29 38.36 19.08 38.78 18.74 38.97L19.98 38.26C20.32 38.06 20.53 37.65 20.53 37.05L20.53 21.16C20.53 19.98 19.69 18.53 18.67 17.94Z" />
+			<path id="&lt;Path&gt;" class="shp2" d="M4.5 31.38C3.47 30.79 2.64 29.34 2.64 28.16L2.64 12.27C2.64 11.67 2.85 11.26 3.18 11.06C3.52 10.87 3.99 10.9 4.5 11.19L17.43 18.66C18.45 19.25 19.29 20.7 19.29 21.88L19.29 37.77C19.29 38.36 19.08 38.78 18.74 38.97C18.41 39.17 17.94 39.14 17.43 38.84L4.5 31.38Z" />
+		</g>
+		<g id="&lt;Group&gt;">
+			<path id="&lt;Path&gt;" class="shp4" d="M16.22 25.17L5.71 19.1L5.71 17.9L16.22 23.96L16.22 25.17Z" />
+			<path id="&lt;Path&gt;" class="shp5" d="M16.22 28.3L5.71 22.24L5.71 21.03L16.22 27.1L16.22 28.3Z" />
+			<path id="&lt;Path&gt;" class="shp6" d="M16.22 31.44L5.71 25.37L5.71 24.17L16.22 30.24L16.22 31.44Z" />
+			<path id="&lt;Path&gt;" class="shp7" d="M13.63 33.11L5.71 28.47L5.72 27.27L13.64 31.91L13.63 33.11Z" />
+		</g>
+		<g id="&lt;Group&gt;">
+			<g id="&lt;Group&gt;">
+				<path id="&lt;Path&gt;" class="shp8" d="M5.74 14.91L4.13 13.98L4.13 10.97L5.74 11.9L5.74 14.91Z" />
+				<g id="&lt;Group&gt;">
+					<path id="&lt;Path&gt;" class="shp9" d="M7.09 14.12L7.1 12.69L8.33 11.98L8.33 10.4L5.74 11.9L5.74 14.91L7.09 14.12Z" />
+				</g>
+				<path id="&lt;Path&gt;" class="shp10" d="M4.13 10.97L6.72 9.47L8.33 10.4L5.74 11.9L4.13 10.97Z" />
+			</g>
+			<g id="&lt;Group&gt;">
+				<path id="&lt;Path&gt;" class="shp8" d="M15.34 20.45L13.73 19.53L13.73 16.51L15.34 17.44L15.34 20.45Z" />
+				<g id="&lt;Group&gt;">
+					<path id="&lt;Path&gt;" class="shp9" d="M16.7 19.66L16.7 18.24L17.94 17.52L17.94 15.94L15.34 17.44L15.34 20.45L16.7 19.66Z" />
+				</g>
+				<path id="&lt;Path&gt;" class="shp10" d="M13.73 16.51L16.33 15.01L17.94 15.94L15.34 17.44L13.73 16.51Z" />
+			</g>
+			<g id="&lt;Group&gt;">
+				<path id="&lt;Path&gt;" class="shp8" d="M10.54 17.68L8.93 16.75L8.93 13.74L10.54 14.67L10.54 17.68Z" />
+				<g id="&lt;Group&gt;">
+					<path id="&lt;Path&gt;" class="shp9" d="M11.9 16.89L11.9 15.47L13.13 14.75L13.13 13.17L10.54 14.67L10.54 17.68L11.9 16.89Z" />
+				</g>
+				<path id="&lt;Path&gt;" class="shp10" d="M8.93 13.74L11.52 12.24L13.13 13.17L10.54 14.67L8.93 13.74Z" />
+			</g>
+		</g>
+	</g>
+</svg>

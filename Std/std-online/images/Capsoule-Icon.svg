@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 32" width="39" height="32">
+	<defs>
+		<radialGradient id="grd1" gradientUnits="userSpaceOnUse"  cx="27.981" cy="19.61" r="17.512">
+			<stop offset="0" stop-color="#ffffff"  />
+			<stop offset="1" stop-color="#d0d7d8"  />
+		</radialGradient>
+		<linearGradient id="grd2" gradientUnits="userSpaceOnUse"  x1="2.287" y1="-0.169" x2="25.258" y2="-0.169">
+			<stop offset="0" stop-color="#ff9941"  />
+			<stop offset="1" stop-color="#ff4223"  />
+		</linearGradient>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: url(#grd1) } 
+		.shp1 { fill: url(#grd2) } 
+	</style>
+	<g id="&lt;Group&gt;">
+		<path id="&lt;Compound Path&gt;" fill-rule="evenodd" class="shp0" d="M33.1 11.31C32.91 11.2 32.71 11.11 32.5 11.03C32.71 11.11 32.91 11.2 33.1 11.31L25.26 6.78C22.2 5.02 17.24 7.88 14.19 13.17C11.13 18.47 11.13 24.19 14.19 25.96L22.03 30.49L22.02 30.48C27.32 33.54 34.09 31.73 37.15 26.43C40.21 21.14 38.39 14.37 33.1 11.31ZM22.02 30.48C21.83 30.37 21.65 30.25 21.49 30.11C21.65 30.25 21.83 30.37 22.02 30.48L22.02 30.48Z" />
+		<path id="&lt;Path&gt;" class="shp1" d="M17.42 2.26L17.42 2.26C12.12 -0.8 5.35 1.01 2.29 6.31C-0.76 11.6 1.05 18.37 6.35 21.43L6.35 21.43L14.19 25.96C11.13 24.19 11.13 18.47 14.19 13.17C17.24 7.88 22.2 5.02 25.26 6.78L17.42 2.26Z" />
+	</g>
+</svg>

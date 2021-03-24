@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 43" width="31" height="43">
+	<defs>
+		<linearGradient id="grd1" gradientUnits="userSpaceOnUse"  x1="0.977" y1="14.799" x2="30.211" y2="14.799">
+			<stop offset="0" stop-color="#f3f5f5"  />
+			<stop offset="0.783" stop-color="#d0d7d8"  />
+			<stop offset="1" stop-color="#d0d7d8"  />
+		</linearGradient>
+		<linearGradient id="grd2" gradientUnits="userSpaceOnUse"  x1="8.027" y1="15.822" x2="19.856" y2="15.822">
+			<stop offset="0" stop-color="#5ad1e4"  />
+			<stop offset="0.639" stop-color="#6ccfb3"  />
+			<stop offset="1" stop-color="#5ad1e4"  />
+		</linearGradient>
+		<radialGradient id="grd3" gradientUnits="userSpaceOnUse"  cx="4.478" cy="5.422" r="19.546">
+			<stop offset="0" stop-color="#fff4b2"  />
+			<stop offset="1" stop-color="#ffbd85"  />
+		</radialGradient>
+		<linearGradient id="grd4" gradientUnits="userSpaceOnUse"  x1="5.841" y1="-0.261" x2="23.391" y2="-0.261">
+			<stop offset="0" stop-color="#fafafa"  />
+			<stop offset="0.768" stop-color="#e5eaeb"  />
+			<stop offset="1" stop-color="#d3dadb"  />
+		</linearGradient>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: url(#grd1) } 
+		.shp1 { fill: url(#grd2) } 
+		.shp2 { fill: url(#grd3) } 
+		.shp3 { fill: url(#grd4) } 
+		.shp4 { fill: #fa481d } 
+		.shp5 { fill: #eff1f2 } 
+	</style>
+	<g id="&lt;Group&gt;">
+		<path id="&lt;Path&gt;" class="shp0" d="M17.13 16.19C9.75 14.4 0.29 17.59 0.29 30.5C-0.55 36.35 7.05 42.19 16.24 42.85C23.64 43.39 30.21 40.3 30.21 35.77C30.21 29.08 29.04 19.08 17.13 16.19Z" />
+		<path id="&lt;Path&gt;" class="shp1" d="M19.86 19.69C16.97 23.49 14.27 28.75 11.77 35.47C8.93 28.44 7.6 22.22 7.78 16.82L14.74 17.14L19.86 19.69Z" />
+		<path id="&lt;Path&gt;" class="shp2" d="M22.6 16.16C20.68 19.15 17.81 22.9 14.58 23.69C9.53 24.91 5.82 16.46 5.82 11.27C5.82 6.07 8.98 1.65 14.09 0.76C20.74 -0.4 28.34 7.19 22.6 16.16Z" />
+		<g id="&lt;Group&gt;">
+			<path id="&lt;Path&gt;" class="shp3" d="M24.38 12.01C25.94 5 19.69 -0.22 14.09 0.76C9.13 1.62 6.03 5.81 5.84 10.79C7 11.62 8.22 12.24 9.25 12.55C14.33 14.09 19.47 13.73 24.38 12.01Z" />
+		</g>
+		<g id="&lt;Group&gt;">
+			<path id="&lt;Path&gt;" class="shp4" d="M7.56 7.5C8.05 6.11 9.32 5.83 10.49 6.55C11.66 7.27 12.13 9.24 11.64 10.63C11.15 12.02 9.89 12.31 8.72 11.58C7.54 10.86 7.07 8.89 7.56 7.5Z" />
+			<g id="&lt;Group&gt;">
+				<path id="&lt;Path&gt;" class="shp5" d="M7.8 9.14C7.94 9.34 8.16 9.46 8.65 9.65C8.63 10.23 8.62 10.42 8.67 10.72C9.05 11.02 9.38 11.15 9.78 11.15C9.88 10.99 10.02 10.61 10.09 10.08C10.46 10.16 10.77 10.19 10.9 10.15C11.06 9.74 11.1 9.33 11.09 8.89C10.91 8.74 10.71 8.67 10.22 8.48C10.25 7.91 10.24 7.64 10.19 7.34C9.71 7.18 9.45 7.08 9.01 7.13C8.9 7.29 8.86 7.53 8.78 8.06C8.31 7.96 8.13 7.94 7.88 7.88C7.77 8.37 7.77 8.62 7.8 9.14Z" />
+			</g>
+		</g>
+	</g>
+</svg>

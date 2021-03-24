@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 34" width="28" height="34">
+	<defs>
+		<linearGradient id="grd1" gradientUnits="userSpaceOnUse"  x1="16.213" y1="11.642" x2="28.116" y2="11.642">
+			<stop offset="0" stop-color="#40909f"  />
+			<stop offset="0.342" stop-color="#4faeb6"  />
+			<stop offset="1" stop-color="#5ad1e4"  />
+		</linearGradient>
+		<linearGradient id="grd2" gradientUnits="userSpaceOnUse"  x1="-0.1" y1="-0.652" x2="14.724" y2="-0.652">
+			<stop offset="0" stop-color="#40909f"  />
+			<stop offset="0.342" stop-color="#4faeb6"  />
+			<stop offset="1" stop-color="#5ad1e4"  />
+		</linearGradient>
+		<linearGradient id="grd3" gradientUnits="userSpaceOnUse"  x1="21.176" y1="-1.586" x2="28.811" y2="11.639">
+			<stop offset="0" stop-color="#40909f"  />
+			<stop offset="0.429" stop-color="#56c6d5"  />
+			<stop offset="1" stop-color="#4faeb6"  />
+			<stop offset="1" stop-color="#5ad1e4"  />
+		</linearGradient>
+		<linearGradient id="grd4" gradientUnits="userSpaceOnUse"  x1="-0.1" y1="3.18" x2="21.348" y2="3.18">
+			<stop offset="0.857" stop-color="#57cada"  />
+			<stop offset="1" stop-color="#5ad1e4"  />
+		</linearGradient>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: url(#grd1) } 
+		.shp1 { fill: url(#grd2) } 
+		.shp2 { fill: url(#grd3) } 
+		.shp3 { fill: url(#grd4) } 
+	</style>
+	<g id="&lt;Group&gt;">
+		<path id="&lt;Path&gt;" class="shp0" d="M16.21 32.97L22.98 29.07C25.86 27.41 28.12 22.47 28.12 12.64L21.35 16.55C21.35 26.37 19.09 31.31 16.21 32.97Z" />
+		<path id="&lt;Path&gt;" class="shp1" d="M7.96 8.12L14.72 4.22C12.51 5.5 9.57 4.16 6.67 0.26L-0.1 4.17C2.8 8.07 5.74 9.4 7.96 8.12Z" />
+		<path id="&lt;Path&gt;" class="shp2" d="M21.35 16.55L28.12 12.64C23.78 13.46 19.38 8.5 17.39 0.41L10.62 4.32C12.62 12.4 17.01 17.36 21.35 16.55Z" />
+		<path id="&lt;Path&gt;" class="shp3" d="M10.62 4.32C9.97 6.23 9.05 7.49 7.96 8.12C5.74 9.4 2.8 8.07 -0.1 4.17C-0.1 19.99 5.76 29.9 10.62 32.71C12.47 33.78 14.46 33.99 16.21 32.97C19.09 31.31 21.35 26.37 21.35 16.55C17.01 17.36 12.62 12.4 10.62 4.32Z" />
+	</g>
+</svg>
