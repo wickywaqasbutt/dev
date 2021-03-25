@@ -23,7 +23,7 @@ $(".smooth-anchor").click(function(e) {
     if (target.length) {
         var scrollTo = target.offset().top;
         $('body, html').animate({
-            scrollTop: scrollTo + 'px'
+            scrollTop: scrollTo - 100 + 'px'
         }, 800);
     }
 });
