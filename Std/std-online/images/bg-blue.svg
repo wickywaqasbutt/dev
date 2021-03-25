@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 766" width="551" height="766">
+	<defs>
+		<linearGradient id="grd1" gradientUnits="userSpaceOnUse"  x1="595.765" y1="232.084" x2="179.889" y2="-2.437">
+			<stop offset="0" stop-color="#f5f6f6"  />
+			<stop offset="0.953" stop-color="#57cada"  />
+		</linearGradient>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { opacity: 0.169;fill: url(#grd1) } 
+	</style>
+	<path id="&lt;Path&gt;" class="shp0" d="M551 329.11C541.76 176.11 513.62 128.41 391.92 108.88C242.86 84.96 257.65 54.29 181.36 22.99C152.76 11.25 86.36 -16.92 0.36 13.76L0.36 766C0.36 766 528 761.11 540.24 754.11C562.28 741.5 551 361.11 551 361.11L551 329.11ZM543 328L543 328Z" />
+</svg>

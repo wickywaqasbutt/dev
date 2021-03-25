@@ -12,6 +12,9 @@ $color-gray: #b4c2d2;
 $color-lightgray: #a8b6c0;
 $color-green: #53a5ad;
 $color-halfblue: #274b94;
+$color-rimblue: #59d1e3;
+$color-rimgreen: #6bceb3;
+$stats-border: #ff8b66;
 //media quries
 $media-xl: "only screen and (max-width :1600px)";
 $media-lg: "only screen and (max-width :1376px)";
@@ -49,17 +52,13 @@ body {
     font-size: 17px;
 }
 
-@for $index from 1 through 6 {
-    h#{$index} {}
-}
-
 h1 {
     font-size: 34px;
     font-weight: 500;
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 34px;
     font-weight: 500;
 }
 
@@ -92,44 +91,67 @@ a {
     }
 }
 
+.transition {
+    transition: all 250ms ease-in-out;
+}
+
+//Gradient mixins
+$physical-color1: #6bceb3;
+$physical-color2: #6aceb7;
+$physical: $physical-color1 -50%,
+$physical-color2 -50%;
+$stats-color1: #ff592a;
+$stats-color2: #ff6c30;
+$stats: $stats-color1 12%,
+$stats-color2 95%;
+$testing-color1: rgba( #43b0e2,
+0.52);
+$testing-color2: rgba( #2b64b5,
+0.52);
+$testing: $testing-color1 0%,
+$testing-color2 99%;
+@mixin gradient($direction,
+$list) {
+    background: -webkit-linear-gradient($direction, $list);
+    background: -moz-linear-gradient($direction, $list);
+    background: -o-linear-gradient($direction, $list);
+    background: linear-gradient($direction, $list);
+}
+
 // Header
 .site-header {
     padding: 15px 0;
     position: absolute;
     width: 100%;
     top: 0;
+    &--sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 999;
+        background-color: rgba( $color-white, 0.8);
+    }
+    &__logo {
+        width: 171px;
+        display: inline-block;
+        img {
+            width: 100%;
+        }
+    }
     &__grid {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
     &__col {
-        &--left {
-            a {
-                width: 171px;
-                display: inline-block;
-                img {
-                    width: 100%;
-                }
-            }
-        }
         &--middle {
             flex: 1;
             margin-left: 60px;
+            padding-bottom: 10px;
         }
         &--inner {
             display: flex;
             align-items: flex-start;
-        }
-    }
-    &__nav {
-        &--list {
-            display: inline-block;
-            margin-right: 36px;
-        }
-        &--link {
-            color: $color-blue;
-            font-weight: 500;
         }
     }
     &__right {
@@ -140,55 +162,81 @@ a {
     &__icon {
         width: 20px;
     }
+    &__cta {
+        display: flex;
+        width: 370px;
+        align-items: center;
+    }
     &__address {
         background-image: url('/images/location-icon.svg');
         background-size: 20px;
-        background-position: 30px 1px;
+        background-position: left top;
         background-repeat: no-repeat;
-        padding-left: 30px;
         text-align: right;
-        padding-right: 65px;
         color: $color-blue;
         font-weight: 500;
         width: 318px;
         max-width: 100%;
+        border-right: 1px solid $color-blue;
+        padding: 1px 20px;
     }
     &__contact {
-        padding-left: 65px;
-        background-image: url('/images/orange-call-icon.svg');
-        background-size: 20px;
-        background-position: 58px 3px;
-        background-repeat: no-repeat;
-        border-left: 1px solid $color-blue;
-        &--num {
-            text-align: right;
-            color: $color-blue;
-            font-weight: 500;
+        padding-left: 20px;
+        a {
+            display: inline-block;
         }
     }
-    .header-cta {
-        background-color: $color-orange;
-        border: 0px;
-        padding: 8px 27px;
-        border-radius: 3px;
-        color: $color-white;
-        font-size: 12px;
-        cursor: pointer;
-        margin-top: 3px;
+    &__phone-num {
+        background-image: url('/images/orange-call-icon.svg');
+        background-size: 20px;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        text-align: right;
+        color: $color-blue;
+        font-weight: 500;
+        padding-left: 25px;
+        transition: color 250ms ease-in-out;
+        &:hover {
+            @extend .text-orange;
+        }
     }
 }
 
 //Component
-.three-col-grid__col {
-    display: flex;
-    flex-wrap: wrap;
+.site-nav {
+    &__list-item {
+        display: inline-block;
+        margin-right: 36px;
+    }
+    &__link {
+        color: $color-blue;
+        font-weight: 500;
+        transition: color 250ms ease-in-out;
+        &:hover {
+            @extend .text-orange;
+        }
+    }
+}
+
+.default-btn {
+    background-color: $color-orange;
+    border: 0px;
+    padding: 10px 35px;
+    border-radius: 3px;
+    color: $color-white;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 3px;
+    transition: background 250ms ease-in-out;
+    &:hover {
+        background-color: $color-blue;
+    }
+}
+
+.three-col-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-auto-rows: minmax(150px, auto);
-    grid-gap: 1em;
-    justify-content: center;
-    align-items: stretch;
-    column-gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.5em;
 }
 
 .services-section {
@@ -201,6 +249,7 @@ a {
         display: flex;
         align-items: center;
         background: $color-lightgreen;
+        background: linear-gradient(0deg, rgba($color-rimgreen, .2) 44%, rgba($color-rimblue, .2) 100%);
         border-radius: 32px;
         padding: 30px 20px;
         min-height: 111px;
@@ -213,23 +262,74 @@ a {
         color: $color-blue;
         font-weight: 500;
     }
+    &:hover {
+        .icon-button__inner {
+            background: linear-gradient(0deg, rgba($color-rimgreen, .6) 44%, rgba($color-rimblue, .6) 100%);
+        }
+    }
+}
+
+.disease-box-outer {
+    padding: 60px 0;
+    &--physical {
+        @include gradient(right,
+        $physical);
+    }
+    &--testing {
+        @include gradient(right,
+        $testing);
+    }
+    &--no-padding {
+        padding-top: 0;
+    }
 }
 
 .disease-box {
     border: 1px solid $color-gray;
-    background-image: url(/images/Faq-bg.png);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: 100%;
+    &--no-border {
+        border: 0;
+    }
+    &--stats {
+        border: 1px solid $stats-border;
+    }
     &__header {
         background: linear-gradient(90deg, #57cada 86%, #5ad1e4 100%);
         padding: 0px 63px;
-        &--title {
-            background-image: url(/images/Tube-Shadow-Icon.svg);
-            background-position: left;
-            background-repeat: no-repeat;
+        &--transparent {
+            background: transparent;
+        }
+        &--stats {
+            @include gradient(right,
+            $stats);
+        }
+    }
+    &__content {
+        padding: 1px 0;
+        &--white {
+            background-color: white;
+        }
+    }
+    &__title {
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: 80px;
+        padding: 45px 0px 45px 100px;
+        letter-spacing: 2px;
+        &--feel {
+            background: url(../images/symptoms-icon.svg) no-repeat left center;
+            background-size: 40px;
+        }
+        &--physical {
+            background: url(../images/Eye-icon.svg) no-repeat left center;
+            background-size: 60px;
+        }
+        &--stats {
+            background: url(../images/calander-shadow-Icon.svg) no-repeat left center;
             background-size: 80px;
-            padding: 25px 0px 25px 80px;
+        }
+        &--testing {
+            background: url(../images/Tube-icon.svg) no-repeat left center;
+            background-size: 60px;
         }
     }
     &__text {
@@ -242,22 +342,22 @@ a {
         margin: 18px 63px 12px 63px;
     }
     &__btn {
-        margin: 40px 0px;
-        .sec-button {
-            justify-content: flex-end;
-            &__icon {
-                img {
-                    width: 42px;
-                    max-width: 100%;
-                }
-            }
-        }
+        padding: 60px 0px 40px 0px;
+        display: flex;
+        justify-content: flex-end;
     }
 }
 
 .faq-accordian {
-    padding: 0px 15px 0px 63px;
-    margin-top: 70px;
+    padding: 70px 60px 0px 63px;
+    margin-top: 50px;
+    background-image: url(/images/bg-blue.svg);
+    background-repeat: no-repeat;
+    background-position: -4px 0;
+    background-size: 101%;
+    &--bg-green {
+        background-image: url(/images/green-bg.svg);
+    }
 }
 
 .faq-header {
@@ -273,8 +373,7 @@ a {
 }
 
 .faq-accordians {
-    &.first-child {}
-    .faqTitle {
+    .faq-title {
         background-image: url(/images/orange-faq.svg);
         background-repeat: no-repeat;
         background-position: 0 4px;
@@ -287,7 +386,7 @@ a {
             margin-top: 45px;
         }
     }
-    .faqAnswer {
+    .faq-answer {
         padding: 10px 30px;
     }
 }
@@ -343,11 +442,14 @@ a {
         align-items: center;
     }
     &__number {
-        color: $color-white;
         margin-left: 8px;
     }
-    &__btn {
+    a {
         color: $color-white;
+        transition: color 250ms ease-in-out;
+        &:hover {
+            @extend .text-orange;
+        }
     }
 }
 
@@ -422,8 +524,14 @@ img {
 .sec-button {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+    width: 250px;
     &__icon {
         margin-right: 25px;
+        img {
+            width: 42px;
+            max-width: 100%;
+        }
     }
     &__text {
         background-color: $color-lightgreen;
@@ -432,6 +540,16 @@ img {
         padding: 18px 20px;
         border-radius: 12px;
         font-weight: 500;
+        @extend .transition;
+        p {
+            margin: 39px 0px 48px 0px;
+        }
+    }
+    &:hover {
+        .sec-button__text {
+            background: $color-orange;
+            color: $color-white;
+        }
     }
 }
 
@@ -439,17 +557,17 @@ img {
     outline: none;
 }
 
-::-webkit-input-placeholder {
+ ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari/Edge */
     color: #606060;
 }
 
-::-ms-input-placeholder {
+ ::-ms-input-placeholder {
     /* Microsoft Edge */
     color: #606060;
 }
 
-:-ms-input-placeholder {
+ :-ms-input-placeholder {
     /* IE 10+ */
     color: #606060;
 }

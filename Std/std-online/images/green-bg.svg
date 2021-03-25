@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 552 260" width="552" height="260">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 552 769" width="552" height="769">
 	<defs>
-		<linearGradient id="grd1" gradientUnits="userSpaceOnUse"  x1="569.993" y1="119.936" x2="185.388" y2="-96.952">
+		<linearGradient id="grd1" gradientUnits="userSpaceOnUse"  x1="553.182" y1="769.109" x2="-1.682" y2="769.109">
 			<stop offset="0" stop-color="#ffffff"  />
 			<stop offset="0.953" stop-color="#6ccfb3"  />
 		</linearGradient>
@@ -9,5 +9,5 @@
 		tspan { white-space:pre }
 		.shp0 { opacity: 0.2;fill: url(#grd1) } 
 	</style>
-	<path id="&lt;Path&gt;" class="shp0" d="M548.81 259.04C565.67 154.92 513.26 95.59 391.56 81.05C242.5 63.24 257.29 40.42 181 17.12C152.4 8.38 86 -12.58 0 10.25L0 259.77L548.81 259.04Z" />
+	<path id="&lt;Path&gt;" class="shp0" d="M550 769.11L551.5 362.02L551.43 362.02C551.44 361.57 551.47 361.07 551.5 360.53L551.5 267.09C541.23 204.16 516.74 133.48 419.8 89.92C323.06 46.45 286.31 82.88 194 28.78C145.61 0.42 87.66 -13.43 1.5 18.34L0 769.11L550 769.11Z" />
 </svg>
