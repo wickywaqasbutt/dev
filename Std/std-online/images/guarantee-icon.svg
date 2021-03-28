@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 24" width="19" height="24">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #f86047 } 
+	</style>
+	<g id="&lt;Group&gt;">
+		<g id="&lt;Group&gt;">
+			<path id="&lt;Path&gt;" class="shp0" d="M18 13.28L18 2.96L9.39 0.99L0.78 2.96L0.78 13.28C0.72 16.81 3.59 19.92 9.39 22.61C15.19 19.92 18.06 16.81 18 13.28Z" />
+		</g>
+		<path id="&lt;Path&gt;" class="shp0" d="M5.83 11.38L8.83 14.3L12.95 9.3" />
+	</g>
+</svg>
