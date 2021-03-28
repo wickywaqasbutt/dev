@@ -1080,7 +1080,7 @@ a {
 }
 
 .std-footer {
-  background-image: url(/images/footer-bg.svg);
+  background-image: url(../images/footer-bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
@@ -1130,7 +1130,7 @@ a {
 }
 
 .std-footer__address--location {
-  background-image: url(/images/location-white.svg);
+  background-image: url(../images/location-white.svg);
   background-position: left top;
   background-size: 20px;
   background-repeat: no-repeat;
@@ -1141,7 +1141,7 @@ a {
 }
 
 .std-footer__contact--phone {
-  background-image: url(/images/phone-white.svg);
+  background-image: url(../images/phone-white.svg);
   background-position: left top;
   background-size: 20px;
   background-repeat: no-repeat;
@@ -1363,7 +1363,7 @@ a {
 
 .testing-services {
   padding: 100px 0px;
-  background-image: url(/images/services-bg.svg);
+  background-image: url(../images/services-bg.svg);
   background-repeat: no-repeat;
   background-position: left;
   background-size: 79%;
@@ -1411,21 +1411,21 @@ a {
 }
 
 .testing-services__item--dolor {
-  background-image: url(/images/dolor-icon.svg);
+  background-image: url(../images/dolor-icon.svg);
   background-repeat: no-repeat;
   background-position: left top;
   padding-left: 40px;
 }
 
 .testing-services__item--guarantee {
-  background-image: url(/images/guarantee-icon.svg);
+  background-image: url(../images/guarantee-icon.svg);
   background-repeat: no-repeat;
   background-position: left top;
   padding-left: 40px;
 }
 
 .testing-services__item--like {
-  background-image: url(/images/like-icon.svg);
+  background-image: url(../images/like-icon.svg);
   background-repeat: no-repeat;
   background-position: left top;
   padding-left: 40px;

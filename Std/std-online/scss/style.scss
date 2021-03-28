@@ -859,7 +859,7 @@ $testing-color2 99%;
 }
 
 .std-footer {
-    background-image: url(/images/footer-bg.svg);
+    background-image: url(../images/footer-bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
@@ -891,7 +891,7 @@ $testing-color2 99%;
         padding: 0px 0px 10px 30px;
         margin-bottom: 12px;
         &--location {
-            background-image: url(/images/location-white.svg);
+            background-image: url(../images/location-white.svg);
             background-position: left top;
             background-size: 20px;
             background-repeat: no-repeat;
@@ -900,7 +900,7 @@ $testing-color2 99%;
     &__contact {
         padding: 0px 0px 10px 30px;
         &--phone {
-            background-image: url(/images/phone-white.svg);
+            background-image: url(../images/phone-white.svg);
             background-position: left top;
             background-size: 20px;
             background-repeat: no-repeat;
@@ -1046,7 +1046,7 @@ $testing-color2 99%;
 
 .testing-services {
     padding: 100px 0px;
-    background-image: url(/images/services-bg.svg);
+    background-image: url(../images/services-bg.svg);
     background-repeat: no-repeat;
     background-position: left;
     background-size: 79%;
@@ -1076,19 +1076,19 @@ $testing-color2 99%;
             font-size: 14px;
         }
         &--dolor {
-            background-image: url(/images/dolor-icon.svg);
+            background-image: url(../images/dolor-icon.svg);
             background-repeat: no-repeat;
             background-position: left top;
             padding-left: 40px;
         }
         &--guarantee {
-            background-image: url(/images/guarantee-icon.svg);
+            background-image: url(../images/guarantee-icon.svg);
             background-repeat: no-repeat;
             background-position: left top;
             padding-left: 40px;
         }
         &--like {
-            background-image: url(/images/like-icon.svg);
+            background-image: url(../images/like-icon.svg);
             background-repeat: no-repeat;
             background-position: left top;
             padding-left: 40px;
