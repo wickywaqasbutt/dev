@@ -405,6 +405,35 @@ a {
   z-index: 888;
 }
 
+.content-wrapper {
+  padding-left: 30px;
+  margin-top: 29px;
+}
+
+.content-wrapper__content-block {
+  margin-top: 20px;
+}
+
+.content-wrapper__sm-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.chlamydia-list-group {
+  padding: 0px 0px 0px 60px;
+  margin-bottom: 40px;
+  margin-top: 15px;
+}
+
+.chlamydia-list-group__item {
+  list-style-type: disc;
+  margin-bottom: 10px;
+}
+
 .price-box {
   margin-top: 40px;
 }
@@ -781,6 +810,10 @@ a {
   background-color: white;
 }
 
+.disease-box__content--pb {
+  padding-bottom: 40px !important;
+}
+
 .disease-box__title {
   background-position: left;
   background-repeat: no-repeat;
@@ -923,6 +956,18 @@ a {
   color: #50b3d8;
 }
 
+.faq-para__para {
+  margin-top: 30px;
+  line-height: 25px;
+  width: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+  .faq-para__para {
+    width: 100%;
+  }
+}
+
 .faq-accordians .faq-title {
   background-image: url(../images/orange-faq.svg);
   background-repeat: no-repeat;
@@ -947,6 +992,19 @@ a {
 
 .faq-accordians .faq-answer {
   padding: 10px 30px;
+  font-size: 14px;
+}
+
+.faq-accordians .faq-answer__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+  grid-column-gap: 110px;
 }
 
 @media only screen and (max-width: 540px) {
@@ -1003,6 +1061,14 @@ a {
   margin: 0 auto 40px;
 }
 
+.sec-para {
+  margin-top: 40px;
+}
+
+.sec-para p {
+  margin-bottom: 20px;
+}
+
 .text-orange, .site-header__phone-num:hover, .site-nav__link:hover, .footer-cta a:hover {
   color: #f3694c;
 }
@@ -1013,6 +1079,52 @@ a {
 
 .text-white {
   color: #fff;
+}
+
+.list-item {
+  list-style-type: disc;
+}
+
+.last {
+  margin-bottom: 0;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-7 {
+  margin-top: 7px;
+}
+
+.pl-20 {
+  padding-left: 20px;
+}
+
+.list {
+  text-align: left;
+  width: 50%;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .list {
+    width: 100%;
+  }
+}
+
+.font-bold {
+  font-weight: 600;
 }
 
 .std-table {
@@ -1036,6 +1148,7 @@ a {
 
 .std-table__list {
   margin-left: 9px;
+  margin-top: 5px;
 }
 
 .std-table__table-list {
@@ -1435,6 +1548,10 @@ a {
   .testing-services__right {
     display: none;
   }
+}
+
+.about-chamydia {
+  padding: 70px 0px;
 }
 
 img {
