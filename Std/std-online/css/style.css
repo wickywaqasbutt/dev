@@ -405,9 +405,43 @@ a {
   z-index: 888;
 }
 
+.photographs__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  grid-row-gap: 50px;
+  grid-column-gap: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .photographs__grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+  }
+}
+
+.photographs__grid a {
+  font-size: 10px;
+}
+
 .content-wrapper {
   padding-left: 30px;
   margin-top: 29px;
+}
+
+@media only screen and (max-width: 540px) {
+  .content-wrapper {
+    padding-left: 0px;
+  }
 }
 
 .content-wrapper__content-block {
@@ -423,10 +457,27 @@ a {
           justify-content: center;
 }
 
+@media only screen and (max-width: 768px) {
+  .content-wrapper__sm-table {
+    overflow-x: scroll;
+  }
+}
+
+.content-wrapper p {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
 .chlamydia-list-group {
   padding: 0px 0px 0px 60px;
   margin-bottom: 40px;
   margin-top: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .chlamydia-list-group {
+    padding-left: 0px;
+  }
 }
 
 .chlamydia-list-group__item {
@@ -434,11 +485,17 @@ a {
   margin-bottom: 10px;
 }
 
-.price-box {
+@media only screen and (max-width: 768px) {
+  .chlamydia-list-group__item {
+    font-size: 14px;
+  }
+}
+
+.chlamydia-hero .price-box {
   margin-top: 40px;
 }
 
-.price-box__wrapper {
+.chlamydia-hero .price-box__wrapper {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr .5fr;
@@ -449,51 +506,51 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
-  .price-box__wrapper {
+  .chlamydia-hero .price-box__wrapper {
     width: 100%;
   }
 }
 
 @media only screen and (max-width: 540px) {
-  .price-box__wrapper {
+  .chlamydia-hero .price-box__wrapper {
     overflow-x: scroll;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
 }
 
-.price-box__col--charges {
+.chlamydia-hero .price-box__col--charges {
   padding: 0px 20px 20px 20px;
 }
 
-.price-box__col--charges__bg-blue {
+.chlamydia-hero .price-box__col--charges__bg-blue {
   background-color: #3b6bb1;
   color: #fff;
 }
 
-.price-box__col--doctors {
+.chlamydia-hero .price-box__col--doctors {
   padding: 0px 20px;
 }
 
-.price-box__col p {
+.chlamydia-hero .price-box__col p {
   margin-bottom: 10px;
 }
 
-.price-box__header {
+.chlamydia-hero .price-box__header {
   padding: 20px 0px;
   border-bottom: 1px solid #fff;
   margin-bottom: 20px;
 }
 
-.price-box__header--border-orange {
+.chlamydia-hero .price-box__header--border-orange {
   border-bottom: 1px solid #53a5ad;
 }
 
-.price-box__name {
+.chlamydia-hero .price-box__name {
   text-align: left;
 }
 
-.price-box__table-below {
+.chlamydia-hero .price-box__table-below {
   margin-top: 15px;
   text-align: center;
 }
@@ -789,7 +846,17 @@ a {
 
 @media only screen and (max-width: 540px) {
   .disease-box__header {
-    padding: 0px 3px;
+    padding: 0px 15px;
+  }
+}
+
+.disease-box__header--chlamydia {
+  padding: 30px 63px !important;
+}
+
+@media only screen and (max-width: 540px) {
+  .disease-box__header--chlamydia {
+    padding: 20px 15px !important;
   }
 }
 
@@ -803,7 +870,13 @@ a {
 }
 
 .disease-box__content {
-  padding: 1px 0;
+  padding: 0px 63px;
+}
+
+@media only screen and (max-width: 540px) {
+  .disease-box__content {
+    padding: 0px 23px;
+  }
 }
 
 .disease-box__content--white {
@@ -820,6 +893,18 @@ a {
   background-size: 80px;
   padding: 45px 0px 45px 100px;
   letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 768px) {
+  .disease-box__title {
+    padding: 20px 0px 20px 80px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .disease-box__title {
+    padding: 20px 0px 20px 70px;
+  }
 }
 
 .disease-box__title--feel {
@@ -877,16 +962,6 @@ a {
   background-size: 40px;
 }
 
-.disease-box__text {
-  padding: 0px 63px;
-}
-
-@media only screen and (max-width: 540px) {
-  .disease-box__text {
-    padding: 0px 23px;
-  }
-}
-
 .disease-box__text p {
   margin: 39px 0px 48px 0px;
 }
@@ -939,6 +1014,12 @@ a {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .faq-accordian {
+    background-size: cover;
+  }
+}
+
 .faq-accordian--bg-green {
   background-image: url(../images/green-bg.svg);
 }
@@ -965,6 +1046,7 @@ a {
 @media only screen and (max-width: 768px) {
   .faq-para__para {
     width: 100%;
+    font-size: 14px;
   }
 }
 
@@ -983,6 +1065,7 @@ a {
   .faq-accordians .faq-title {
     margin-top: 10px;
     font-size: 14px;
+    padding-right: 0;
   }
 }
 
@@ -1065,8 +1148,14 @@ a {
   margin-top: 40px;
 }
 
+@media only screen and (max-width: 768px) {
+  .sec-para {
+    width: 400%;
+  }
+}
+
 .sec-para p {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .text-orange, .site-header__phone-num:hover, .site-nav__link:hover, .footer-cta a:hover {
@@ -1093,8 +1182,48 @@ a {
   margin-bottom: 20px;
 }
 
+.mt-20 {
+  margin-top: 20px;
+}
+
 .mt-15 {
   margin-top: 15px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .mt-30 {
+    margin-top: 20px;
+  }
+}
+
+.w-70 {
+  width: 70%;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .w-70 {
+    width: 100%;
+  }
+}
+
+.w-90 {
+  width: 90%;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .w-90 {
+    width: 100%;
+  }
+}
+
+.mx-auto {
+  margin: 0px auto;
 }
 
 .mt-10 {
@@ -1326,6 +1455,16 @@ a {
 
 .hero-section__image img {
   width: 100%;
+}
+
+.chlamydia-hero {
+  padding-top: 190px;
+}
+
+@media only screen and (max-width: 768px) {
+  .chlamydia-hero {
+    padding-top: 110px;
+  }
 }
 
 .consult-sec {
