@@ -962,6 +962,16 @@ a {
   background-size: 40px;
 }
 
+.disease-box__para {
+  padding-left: 100px;
+  padding-bottom: 50px;
+  padding-right: 50px;
+}
+
+.disease-box__para p {
+  margin-bottom: 20px;
+}
+
 .disease-box__text p {
   margin: 39px 0px 48px 0px;
 }
