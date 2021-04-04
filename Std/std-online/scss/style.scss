@@ -368,8 +368,15 @@ $testing-color2 99%;
     }
 }
 
+.content-sub {
+    margin: 20px auto 0px auto;
+}
+
+.content-sub {
+    margin-top: 10px;
+}
+
 .content-wrapper {
-    padding-left: 30px;
     margin-top: 29px;
     @media #{$media-mobile} {
         padding-left: 0px;
@@ -678,7 +685,7 @@ $testing-color2 99%;
         }
         &--chlamydia {
             padding: 30px 63px !important;
-            @media #{$media-mobile} {
+            @media #{$media-tab} {
                 padding: 20px 15px !important;
             }
         }
@@ -691,10 +698,6 @@ $testing-color2 99%;
         }
     }
     &__content {
-        padding: 0px 63px;
-        @media #{$media-mobile} {
-            padding: 0px 23px;
-        }
         &--white {
             background-color: white;
         }
@@ -763,20 +766,29 @@ $testing-color2 99%;
         padding-left: 100px;
         padding-bottom: 50px;
         padding-right: 50px;
+        @media #{$media-tab} {
+            padding: 30px 23px;
+        }
+        @media #{$media-mobile} {
+            padding: 10px 3px;
+        }
         p {
             margin-bottom: 20px;
         }
     }
-    &__text {
+    &__content-upper {
+        padding: 50px 63px;
+        @media #{$media-tab} {
+            padding: 30px 23px;
+            margin: 0px 10px;
+        }
         p {
-            margin: 39px 0px 48px 0px;
+            margin-bottom: 20px;
             @media #{$media-mobile} {
                 font-size: 14px;
+                line-height: 18px;
             }
         }
-    }
-    &__stdtable {
-        margin: 18px 63px 12px 63px;
     }
     &__btn {
         padding: 60px 0px 40px 0px;

@@ -433,8 +433,15 @@ a {
   font-size: 10px;
 }
 
+.content-sub {
+  margin: 20px auto 0px auto;
+}
+
+.content-sub {
+  margin-top: 10px;
+}
+
 .content-wrapper {
-  padding-left: 30px;
   margin-top: 29px;
 }
 
@@ -854,7 +861,7 @@ a {
   padding: 30px 63px !important;
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 768px) {
   .disease-box__header--chlamydia {
     padding: 20px 15px !important;
   }
@@ -867,16 +874,6 @@ a {
 .disease-box__header--stats {
   background: -webkit-gradient(linear, left top, right top, color-stop(12%, #ff592a), color-stop(95%, #ff6c30));
   background: linear-gradient(left, #ff592a 12%, #ff6c30 95%);
-}
-
-.disease-box__content {
-  padding: 0px 63px;
-}
-
-@media only screen and (max-width: 540px) {
-  .disease-box__content {
-    padding: 0px 23px;
-  }
 }
 
 .disease-box__content--white {
@@ -968,22 +965,42 @@ a {
   padding-right: 50px;
 }
 
+@media only screen and (max-width: 768px) {
+  .disease-box__para {
+    padding: 30px 23px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .disease-box__para {
+    padding: 10px 3px;
+  }
+}
+
 .disease-box__para p {
   margin-bottom: 20px;
 }
 
-.disease-box__text p {
-  margin: 39px 0px 48px 0px;
+.disease-box__content-upper {
+  padding: 50px 63px;
 }
 
-@media only screen and (max-width: 540px) {
-  .disease-box__text p {
-    font-size: 14px;
+@media only screen and (max-width: 768px) {
+  .disease-box__content-upper {
+    padding: 30px 23px;
+    margin: 0px 10px;
   }
 }
 
-.disease-box__stdtable {
-  margin: 18px 63px 12px 63px;
+.disease-box__content-upper p {
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 540px) {
+  .disease-box__content-upper p {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 
 .disease-box__btn {
