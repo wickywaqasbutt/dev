@@ -1022,14 +1022,17 @@ $testing-color2 99%;
             font-size: 14px;
             line-height: 18px;
             &__list-item {
+                margin: 10px 0px;
+                padding-left: 20px;
+                position: relative;
                 &::before {
                     content: "\2022";
+                    position: absolute;
                     color: $color-orange;
                     display: inline-block;
                     font-size: 30px;
                     font-weight: bold;
-                    line-height: 30px;
-                    width: 1em;
+                    left: 0;
                 }
             }
         }

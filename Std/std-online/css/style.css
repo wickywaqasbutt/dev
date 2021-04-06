@@ -1331,14 +1331,20 @@ a {
   line-height: 18px;
 }
 
+.glance__card__list__list-item {
+  margin: 10px 0px;
+  padding-left: 20px;
+  position: relative;
+}
+
 .glance__card__list__list-item::before {
   content: "\2022";
+  position: absolute;
   color: #f47a5d;
   display: inline-block;
   font-size: 30px;
   font-weight: bold;
-  line-height: 30px;
-  width: 1em;
+  left: 0;
 }
 
 .glance__card__warning-strip {
