@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 229" width="350" height="229">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M349.37 119.01C349.37 215.33 271.29 293.42 174.97 293.42C78.65 293.42 0.56 215.33 0.56 119.01C0.56 22.69 78.65 -55.39 174.97 -55.39C271.29 -55.39 349.37 22.69 349.37 119.01Z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #cad5ec } 
+	</style>
+	<g id="&lt;Clip Group&gt;" clip-path="url(#cp1)" style="opacity: 0.502">
+		<g id="&lt;Group&gt;" style="opacity: 0.302">
+			<path id="&lt;Path&gt;" class="shp0" d="M368.86 33.07L-2.26 33.07L-2.26 23.58L368.86 23.58L368.86 33.07Z" />
+		</g>
+		<g id="&lt;Group&gt;" style="opacity: 0.302">
+			<path id="&lt;Path&gt;" class="shp0" d="M368.86 9.5L-2.26 9.5L-2.26 0L368.86 0L368.86 9.5Z" />
+		</g>
+		<g id="&lt;Group&gt;" style="opacity: 0.302">
+			<path id="&lt;Path&gt;" class="shp0" d="M368.86 62.55L-2.26 62.55L-2.26 53.06L368.86 53.06L368.86 62.55Z" />
+		</g>
+		<g id="&lt;Group&gt;" style="opacity: 0.302">
+			<path id="&lt;Path&gt;" class="shp0" d="M368.86 84.52L-2.26 84.52L-2.26 75.03L368.86 75.03L368.86 84.52Z" />
+		</g>
+		<g id="&lt;Group&gt;" style="opacity: 0.302">
+			<path id="&lt;Path&gt;" class="shp0" d="M368.86 106.5L-2.26 106.5L-2.26 97.01L368.86 97.01L368.86 106.5Z" />
+		</g>
+		<g id="&lt;Group&gt;" style="opacity: 0.302">
+			<path id="&lt;Path&gt;" class="shp0" d="M368.86 130.98L-2.26 130.98L-2.26 121.49L368.86 121.49L368.86 130.98Z" />
+		</g>
+		<g id="&lt;Group&gt;" style="opacity: 0.302">
+			<path id="&lt;Path&gt;" class="shp0" d="M368.86 155.46L-2.26 155.46L-2.26 145.96L368.86 145.96L368.86 155.46Z" />
+		</g>
+		<g id="&lt;Group&gt;" style="opacity: 0.302">
+			<path id="&lt;Path&gt;" class="shp0" d="M368.86 179.93L-2.26 179.93L-2.26 170.44L368.86 170.44L368.86 179.93Z" />
+		</g>
+		<g id="&lt;Group&gt;" style="opacity: 0.302">
+			<path id="&lt;Path&gt;" class="shp0" d="M368.86 208.41L-2.26 208.41L-2.26 198.92L368.86 198.92L368.86 208.41Z" />
+		</g>
+		<g id="&lt;Group&gt;" style="opacity: 0.302">
+			<path id="&lt;Path&gt;" class="shp0" d="M368.86 228.89L-2.26 228.89L-2.26 219.4L368.86 219.4L368.86 228.89Z" />
+		</g>
+	</g>
+</svg>

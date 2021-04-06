@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 19" width="19" height="19">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #f25b3e;stroke-width: 0.5 } 
+		.txt1 { font-size: 28px;line-height: 17px;fill: #f25b3e;font-weight: 400;font-family: "Montserrat-Regular", "Montserrat" } 
+	</style>
+	<g id="&lt;Group&gt;">
+		<path id="&lt;Path&gt;" class="shp0" d="M17.82 9.66C17.82 14.26 14.09 17.99 9.49 17.99C4.88 17.99 1.15 14.26 1.15 9.66C1.15 5.06 4.88 1.33 9.49 1.33C14.09 1.33 17.82 5.06 17.82 9.66Z" />
+		<text id="!
+" style="transform: matrix(0.5,0,0,0.5,7.667,13.775)" >
+			<tspan x="0" y="0" class="txt1">!</tspan>
+		</text>
+	</g>
+</svg>
