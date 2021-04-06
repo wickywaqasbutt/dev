@@ -921,14 +921,14 @@ $testing-color2 99%;
     }
 }
 
-.sec-header {
+.ct-sec-header {
     background-image: url(../images/card-header-bg.svg);
     background-repeat: no-repeat;
     background-size: 500px;
     background-position-y: center;
     position: relative;
     left: -20px;
-    padding-left: 50px;
+    padding-left: 20px;
     &__title {
         padding-left: 70px;
     }
@@ -978,9 +978,10 @@ $testing-color2 99%;
             &--bg-blue {
                 background-image: url(../images/glance-card-heading-bg.svg);
                 background-repeat: no-repeat;
-                background-size: contain;
+                background-size: 100%;
                 background-position-y: center;
                 padding: 12px;
+                width: 70%;
                 @media #{$media-mobile} {
                     width: 100%;
                 }

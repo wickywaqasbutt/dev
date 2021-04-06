@@ -1185,21 +1185,21 @@ a {
   margin-bottom: 10px;
 }
 
-.sec-header {
+.ct-sec-header {
   background-image: url(../images/card-header-bg.svg);
   background-repeat: no-repeat;
   background-size: 500px;
   background-position-y: center;
   position: relative;
   left: -20px;
-  padding-left: 50px;
+  padding-left: 20px;
 }
 
-.sec-header__title {
+.ct-sec-header__title {
   padding-left: 70px;
 }
 
-.sec-header--big {
+.ct-sec-header--big {
   background-size: 730px;
   left: -20px;
 }
@@ -1267,9 +1267,10 @@ a {
 .glance__card__card-header--bg-blue {
   background-image: url(../images/glance-card-heading-bg.svg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100%;
   background-position-y: center;
   padding: 12px;
+  width: 70%;
 }
 
 @media only screen and (max-width: 540px) {
