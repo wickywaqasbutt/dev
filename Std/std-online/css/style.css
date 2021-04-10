@@ -87,7 +87,7 @@ h2 {
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 500;
 }
 
@@ -476,9 +476,9 @@ a {
 }
 
 .chlamydia-list-group {
-  padding: 0px 0px 0px 60px;
-  margin-bottom: 40px;
-  margin-top: 15px;
+  padding: 0px 0px 0px 20px;
+  margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -492,10 +492,34 @@ a {
   margin-bottom: 10px;
 }
 
+.chlamydia-list-group__item::marker {
+  color: #f3694c;
+}
+
 @media only screen and (max-width: 768px) {
   .chlamydia-list-group__item {
     font-size: 14px;
   }
+}
+
+.chlamydia-list-group__item--dots {
+  list-style: none;
+  margin: 10px 0px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.chlamydia-list-group__item--dots::before {
+  content: "\2022";
+  position: absolute;
+  color: #f47a5d;
+  display: inline-block;
+  font-size: 30px;
+  font-weight: bold;
+  top: -7px;
+  left: 0;
+  bottom: 0;
+  line-height: 30px;
 }
 
 .price-box {
@@ -562,6 +586,141 @@ a {
   text-align: center;
 }
 
+.symptoms__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-row-gap: 70px;
+  grid-column-gap: 70px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 40px;
+}
+
+@media only screen and (max-width: 992px) {
+  .symptoms__grid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .symptoms__grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    text-align: center;
+    grid-column-gap: 40px;
+    margin-top: 15px;
+  }
+}
+
+.symptoms__image-wrapper {
+  height: 383px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .symptoms__image-wrapper {
+    margin: 0px auto;
+    background-size: contain;
+    background-position: center;
+    height: 250px;
+  }
+}
+
+.symptoms__image-wrapper img {
+  width: 100%;
+}
+
+.symptoms__image-wrapper--one {
+  background-image: url(../images/male-symptoms.svg);
+}
+
+.symptoms__image-wrapper--two {
+  background-image: url(../images/male-gental.jpg);
+}
+
+.symptoms__image-wrapper--three {
+  background-image: url(../images/symptoms-blemishes.jpg);
+}
+
+.symptoms__image-wrapper--four {
+  background-image: url(../images/oral.jpg);
+}
+
+.symptoms__image-wrapper--five {
+  background-image: url(../images/hand.jpg);
+}
+
+.symptoms__image-wrapper--six {
+  background-image: url(../images/men-discharge.jpg);
+}
+
+.symptoms__image-wrapper--seven {
+  background-image: url(../images/involvement.jpg);
+}
+
+.symptoms__image-wrapper--eight {
+  background-image: url(../images/lymph-node.jpg);
+}
+
+.symptoms__content-wrapper {
+  margin-top: 22px;
+  width: 410px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .symptoms__content-wrapper {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .symptoms__content-wrapper {
+    margin-top: 12px;
+  }
+}
+
+.symptoms__summary {
+  margin-top: 12px;
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .symptoms__summary {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .symptoms__summary {
+    font-size: 14px;
+  }
+}
+
+.symptoms__link-block {
+  margin-top: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+  .symptoms__link-block {
+    margin-top: 20px;
+  }
+}
+
+<<<<<<< HEAD
+=======
+.table-heading {
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+>>>>>>> final-chlamydia
 .default-btn {
   background-color: #f47a5d;
   border: 0px;
@@ -837,6 +996,26 @@ a {
   border: 1px solid #b4c2d2;
 }
 
+.disease-box__content-wrapper {
+  padding-left: 110px;
+}
+
+@media only screen and (max-width: 768px) {
+  .disease-box__content-wrapper {
+    padding: 0px;
+  }
+}
+
+.disease-box__header-summary {
+  color: #e8ebf3;
+}
+
+@media only screen and (max-width: 768px) {
+  .disease-box__header-summary {
+    font-size: 14px;
+  }
+}
+
 .disease-box--no-border {
   border: 0;
 }
@@ -888,8 +1067,21 @@ a {
   background-position: left;
   background-repeat: no-repeat;
   background-size: 80px;
-  padding: 45px 0px 45px 100px;
+  padding: 0 0px 10px 100px;
   letter-spacing: 2px;
+  position: relative;
+}
+
+.disease-box__title::before {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 130px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -904,64 +1096,55 @@ a {
   }
 }
 
-.disease-box__title--feel {
-  background: url(../images/symptoms-icon.svg) no-repeat left center;
-  background-size: 40px;
+.disease-box__title--feel::before {
+  background-image: url(../images/symptoms-icon.svg);
 }
 
-.disease-box__title--physical {
-  background: url(../images/Eye-icon.svg) no-repeat left center;
-  background-size: 60px;
+.disease-box__title--physical::before {
+  background-image: url(../images/Eye-icon.svg);
 }
 
-.disease-box__title--stats {
-  background: url(../images/Calander-icon.svg) no-repeat left center;
-  background-size: 40px;
+.disease-box__title--stats::before {
+  background-image: url(../images/Calander-icon.svg);
+  width: 50px;
+  height: 80px;
 }
 
-.disease-box__title--testing {
-  background: url(../images/Tube-icon.svg) no-repeat left center;
-  background-size: 60px;
+.disease-box__title--testing::before {
+  background-image: url(../images/Tube-icon.svg);
 }
 
-.disease-box__title--treatment {
-  background: url(../images/Capsoule-Icon.svg) no-repeat left center;
-  background-size: 60px;
+.disease-box__title--treatment::before {
+  background-image: url(../images/Capsoule-Icon.svg);
 }
 
-.disease-box__title--steps {
-  background: url(../images/First-Aid-Icon.svg) no-repeat left center;
-  background-size: 40px;
+.disease-box__title--steps::before {
+  background-image: url(../images/First-Aid-Icon.svg);
 }
 
-.disease-box__title--prevention {
-  background: url(../images/Tand-Icon.svg) no-repeat left center;
-  background-size: 40px;
+.disease-box__title--prevention::before {
+  background-image: url(../images/Tand-Icon.svg);
 }
 
-.disease-box__title--condition {
-  background: url(../images/Tag-Icon.svg) no-repeat left center;
-  background-size: 40px;
+.disease-box__title--condition::before {
+  background-image: url(../images/Tag-Icon.svg);
 }
 
-.disease-box__title--algorithm {
-  background: url(../images/Algorithm-Icon.svg) no-repeat left center;
-  background-size: 40px;
+.disease-box__title--algorithm::before {
+  background-image: url(../images/Algorithm-Icon.svg);
 }
 
-.disease-box__title--myth {
-  background: url(../images/Covid-Icon.svg) no-repeat left center;
-  background-size: 60px;
+.disease-box__title--myth::before {
+  background-image: url(../images/Covid-Icon.svg);
 }
 
-.disease-box__title--partner {
-  background: url(../images/Heart-Icon.svg) no-repeat left center;
-  background-size: 40px;
+.disease-box__title--partner::before {
+  background-image: url(../images/Heart-Icon.svg);
 }
 
 .disease-box__para {
   padding-left: 100px;
-  padding-bottom: 50px;
+  padding-bottom: 0px;
   padding-right: 50px;
 }
 
@@ -989,6 +1172,12 @@ a {
   .disease-box__content-upper {
     padding: 30px 23px;
     margin: 0px 10px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .disease-box__content-upper {
+    padding-right: 20px 3px;
   }
 }
 
@@ -1024,6 +1213,10 @@ a {
     white-space: nowrap;
     margin: 0px 15px;
   }
+}
+
+.disease-box--blue-border {
+  border: 1px solid #57cada;
 }
 
 .faq-accordian {
@@ -1105,6 +1298,12 @@ a {
   font-size: 14px;
 }
 
+@media only screen and (max-width: 768px) {
+  .faq-accordians .faq-answer {
+    padding: 20px 0px;
+  }
+}
+
 .faq-accordians .faq-answer__grid {
   display: -ms-grid;
   display: grid;
@@ -1120,6 +1319,7 @@ a {
 @media only screen and (max-width: 540px) {
   .faq-accordians .faq-answer {
     font-size: 12px;
+    padding: 10px 5px;
   }
 }
 
@@ -1857,11 +2057,110 @@ a {
 
 .chlamydia-hero {
   padding-top: 190px;
+  position: relative;
+  background: url(../images/chlamydia-hero-image.svg);
+  background-size: 630px;
+  background-position: right 160px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 1376px) {
+  .chlamydia-hero {
+    background-size: 450px;
+    background-position: right 272px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .chlamydia-hero {
+    background-position: right;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .chlamydia-hero {
+    background: none;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .chlamydia-hero {
     padding-top: 110px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .chlamydia-hero__title {
+    font-size: 25px;
+  }
+}
+
+.chlamydia-hero__summary {
+  width: 800px;
+  max-width: 100%;
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .chlamydia-hero__summary {
+    font-size: 14px;
+  }
+}
+
+.chlamydia-hero__paragraph {
+  margin-bottom: 14px;
+  color: #3b6bb1;
+  position: relative;
+  font-size: 24px;
+}
+
+.chlamydia-hero__paragraph--bg {
+  padding: 20px 10px;
+}
+
+.chlamydia-hero__paragraph--bg::before {
+  content: "";
+  display: block;
+  background-image: url(../images/paragraph-bg.svg);
+  background-repeat: no-repeat;
+  background-size: 850px;
+  height: 100%;
+  width: 60vw;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 1376px) {
+  .chlamydia-hero__paragraph--bg::before {
+    width: 70vw;
+  }
+}
+
+@media only screen and (max-width: 1376px) {
+  .chlamydia-hero__paragraph--bg::before {
+    width: 100vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .chlamydia-hero__paragraph--bg::before {
+    left: -14px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .chlamydia-hero__paragraph {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .chlamydia-hero__paragraph {
+    font-size: 16px;
   }
 }
 

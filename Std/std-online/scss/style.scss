@@ -52,6 +52,7 @@ $color-rimgreen: #6bceb3;
 $color-purplegray: #c2c9df;
 $color-lightorange: #fdf0ee;
 $color-halfblue: #50b3d8;
+$color-halfgreen: #57cada;
 $stats-border: #ff8b66;
 $gradient-pink: linear-gradient(90deg, #417bc2 0%, #50b3d8 100%);
 //media quries
@@ -108,7 +109,7 @@ h2 {
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 500;
     @media #{$media-mobile} {
         font-size: 18px;
@@ -398,17 +399,38 @@ $testing-color2 99%;
 }
 
 .chlamydia-list-group {
-    padding: 0px 0px 0px 60px;
-    margin-bottom: 40px;
-    margin-top: 15px;
+    padding: 0px 0px 0px 20px;
+    margin-bottom: 25px;
+    margin-top: 25px;
     @media #{$media-tab} {
         padding-left: 0px;
     }
     &__item {
         list-style-type: disc;
         margin-bottom: 10px;
+        &::marker {
+            color: #f3694c;
+        }
         @media #{$media-tab} {
             font-size: 14px;
+        }
+        &--dots {
+            list-style: none;
+            margin: 10px 0px;
+            padding-left: 20px;
+            position: relative;
+            &::before {
+                content: "\2022";
+                position: absolute;
+                color: $color-orange;
+                display: inline-block;
+                font-size: 30px;
+                font-weight: bold;
+                top: -7px;
+                left: 0;
+                bottom: 0;
+                line-height: 30px;
+            }
         }
     }
 }
@@ -461,6 +483,100 @@ $testing-color2 99%;
     }
 }
 
+.symptoms {
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 70px;
+        grid-column-gap: 70px;
+        align-items: flex-start;
+        margin-top: 40px;
+        @media #{$media-desktop} {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media #{$media-tab} {
+            grid-template-columns: 1fr;
+            text-align: center;
+            grid-column-gap: 40px;
+            margin-top: 15px;
+        }
+    }
+    &__image-wrapper {
+        height: 383px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        max-width: 100%;
+        @media #{$media-tab} {
+            margin: 0px auto;
+            background-size: contain;
+            background-position: center;
+            height: 250px;
+        }
+        img {
+            width: 100%;
+        }
+        &--one {
+            background-image: url(../images/male-symptoms.svg);
+        }
+        &--two {
+            background-image: url(../images/male-gental.jpg);
+        }
+        &--three {
+            background-image: url(../images/symptoms-blemishes.jpg);
+        }
+        &--four {
+            background-image: url(../images/oral.jpg);
+        }
+        &--five {
+            background-image: url(../images/hand.jpg);
+        }
+        &--six {
+            background-image: url(../images/men-discharge.jpg);
+        }
+        &--seven {
+            background-image: url(../images/involvement.jpg);
+        }
+        &--eight {
+            background-image: url(../images/lymph-node.jpg);
+        }
+    }
+    &__content-wrapper {
+        margin-top: 22px;
+        width: 410px;
+        @media #{$media-md} {
+            width: 100%;
+        }
+        @media #{$media-tab} {
+            margin-top: 12px;
+        }
+    }
+    &__summary {
+        margin-top: 12px;
+        font-size: 24px;
+        @media #{$media-md} {
+            font-size: 18px;
+        }
+        @media #{$media-tab} {
+            font-size: 14px;
+        }
+    }
+    &__link-block {
+        margin-top: 40px;
+        @media #{$media-tab} {
+            margin-top: 20px;
+        }
+    }
+}
+
+<<<<<<< HEAD
+=======
+.table-heading {
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+>>>>>>> final-chlamydia
 .default-btn {
     background-color: $color-orange;
     border: 0px;
@@ -671,6 +787,18 @@ $testing-color2 99%;
 
 .disease-box {
     border: 1px solid $color-gray;
+    &__content-wrapper {
+        padding-left: 110px;
+        @media #{$media-tab} {
+            padding: 0px;
+        }
+    }
+    &__header-summary {
+        color: $color-halfwhite;
+        @media #{$media-tab} {
+            font-size: 14px;
+        }
+    }
     &--no-border {
         border: 0;
     }
@@ -709,8 +837,20 @@ $testing-color2 99%;
         background-position: left;
         background-repeat: no-repeat;
         background-size: 80px;
-        padding: 45px 0px 45px 100px;
+        padding: 0 0px 10px 100px;
         letter-spacing: 2px;
+        position: relative;
+        &::before {
+            display: block;
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100px;
+            height: 130px;
+        }
         @media #{$media-tab} {
             padding: 20px 0px 20px 80px;
         }
@@ -718,53 +858,66 @@ $testing-color2 99%;
             padding: 20px 0px 20px 70px;
         }
         &--feel {
-            background: url(../images/symptoms-icon.svg) no-repeat left center;
-            background-size: 40px;
+            &::before {
+                background-image: url(../images/symptoms-icon.svg);
+            }
         }
         &--physical {
-            background: url(../images/Eye-icon.svg) no-repeat left center;
-            background-size: 60px;
+            &::before {
+                background-image: url(../images/Eye-icon.svg);
+            }
         }
         &--stats {
-            background: url(../images/Calander-icon.svg) no-repeat left center;
-            background-size: 40px;
+            &::before {
+                background-image: url(../images/Calander-icon.svg);
+                width: 50px;
+                height: 80px;
+            }
         }
         &--testing {
-            background: url(../images/Tube-icon.svg) no-repeat left center;
-            background-size: 60px;
+            &::before {
+                background-image: url(../images/Tube-icon.svg);
+            }
         }
         &--treatment {
-            background: url(../images/Capsoule-Icon.svg) no-repeat left center;
-            background-size: 60px;
+            &::before {
+                background-image: url(../images/Capsoule-Icon.svg);
+            }
         }
         &--steps {
-            background: url(../images/First-Aid-Icon.svg) no-repeat left center;
-            background-size: 40px;
+            &::before {
+                background-image: url(../images/First-Aid-Icon.svg);
+            }
         }
         &--prevention {
-            background: url(../images/Tand-Icon.svg) no-repeat left center;
-            background-size: 40px;
+            &::before {
+                background-image: url(../images/Tand-Icon.svg);
+            }
         }
         &--condition {
-            background: url(../images/Tag-Icon.svg) no-repeat left center;
-            background-size: 40px;
+            &::before {
+                background-image: url(../images/Tag-Icon.svg);
+            }
         }
         &--algorithm {
-            background: url(../images/Algorithm-Icon.svg) no-repeat left center;
-            background-size: 40px;
+            &::before {
+                background-image: url(../images/Algorithm-Icon.svg);
+            }
         }
         &--myth {
-            background: url(../images/Covid-Icon.svg) no-repeat left center;
-            background-size: 60px;
+            &::before {
+                background-image: url(../images/Covid-Icon.svg);
+            }
         }
         &--partner {
-            background: url(../images/Heart-Icon.svg) no-repeat left center;
-            background-size: 40px;
+            &::before {
+                background-image: url(../images/Heart-Icon.svg);
+            }
         }
     }
     &__para {
         padding-left: 100px;
-        padding-bottom: 50px;
+        padding-bottom: 0px;
         padding-right: 50px;
         @media #{$media-tab} {
             padding: 30px 23px;
@@ -781,6 +934,9 @@ $testing-color2 99%;
         @media #{$media-tab} {
             padding: 30px 23px;
             margin: 0px 10px;
+        }
+        @media #{$media-mobile} {
+            padding-right: 20px 3px;
         }
         p {
             margin-bottom: 20px;
@@ -803,6 +959,9 @@ $testing-color2 99%;
             white-space: nowrap;
             margin: 0px 15px;
         }
+    }
+    &--blue-border {
+        border: 1px solid $color-halfgreen;
     }
 }
 
@@ -870,6 +1029,9 @@ $testing-color2 99%;
     .faq-answer {
         padding: 10px 30px;
         font-size: 14px;
+        @media #{$media-tab} {
+            padding: 20px 0px;
+        }
         &__grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -879,6 +1041,7 @@ $testing-color2 99%;
         }
         @media #{$media-mobile} {
             font-size: 12px;
+            padding: 10px 5px;
         }
     }
 }
@@ -1417,8 +1580,75 @@ $testing-color2 99%;
 
 .chlamydia-hero {
     padding-top: 190px;
+    position: relative;
+    background: url(../images/chlamydia-hero-image.svg);
+    background-size: 630px;
+    background-position: right 160px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    @media #{$media-lg} {
+        background-size: 450px;
+        background-position: right 272px;
+    }
+    @media #{$media-md} {
+        background-position: right;
+    }
+    @media #{$media-desktop} {
+        background: none;
+    }
     @media #{$media-tab} {
         padding-top: 110px;
+        text-align: center;
+    }
+    &__title {
+        @media #{$media-tab} {
+            font-size: 25px;
+        }
+    }
+    &__summary {
+        width: 800px;
+        max-width: 100%;
+        margin-top: 30px;
+        @media #{$media-tab} {
+            font-size: 14px;
+        }
+    }
+    &__paragraph {
+        margin-bottom: 14px;
+        color: $color-blue;
+        position: relative;
+        font-size: 24px;
+        &--bg {
+            padding: 20px 10px;
+            &::before {
+                content: "";
+                display: block;
+                background-image: url(../images/paragraph-bg.svg);
+                background-repeat: no-repeat;
+                background-size: 850px;
+                height: 100%;
+                width: 60vw;
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: -1;
+                @media #{$media-lg} {
+                    width: 70vw;
+                }
+                @media #{$media-lg} {
+                    width: 100vw;
+                }
+                @media #{$media-tab} {
+                    left: -14px;
+                }
+            }
+        }
+        @media #{$media-md} {
+            font-size: 20px;
+        }
+        @media #{$media-tab} {
+            font-size: 16px;
+        }
     }
 }
 
