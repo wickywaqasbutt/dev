@@ -1024,7 +1024,7 @@ a {
 .disease-box__header {
   background: -webkit-gradient(linear, left top, right top, color-stop(86%, #57cada), to(#5ad1e4));
   background: linear-gradient(90deg, #57cada 86%, #5ad1e4 100%);
-  padding: 40px 63px;
+  padding: 0px 63px;
 }
 
 @media only screen and (max-width: 540px) {
@@ -1052,28 +1052,6 @@ a {
   background: linear-gradient(left, #ff592a 12%, #ff6c30 95%);
 }
 
-.disease-box__header-inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.disease-box__header-left {
-  width: 80px;
-}
-
-.disease-box__header-left img {
-  width: 100%;
-}
-
-.disease-box__header-right {
-  width: 100%;
-  padding-left: 20px;
-}
-
 .disease-box__content--white {
   background-color: white;
 }
@@ -1086,7 +1064,7 @@ a {
   background-position: left;
   background-repeat: no-repeat;
   background-size: 80px;
-  padding: 0 0px 10px 0;
+  padding: 0 0px 10px 100px;
   letter-spacing: 2px;
   position: relative;
 }
@@ -1150,6 +1128,7 @@ a {
 }
 
 .disease-box__para {
+  padding-left: 100px;
   padding-bottom: 0px;
   padding-right: 50px;
 }
