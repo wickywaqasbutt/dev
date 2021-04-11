@@ -487,6 +487,26 @@ a {
   }
 }
 
+.chlamydia-list-group__item--order {
+  list-style: decimal !important;
+}
+
+.chlamydia-list-group--orderlist {
+  padding: 0px 0px 0px 66px !important;
+}
+
+.chlamydia-list-group--innerlist {
+  margin-left: 15px;
+}
+
+.chlamydia-list-group--mrleft {
+  margin-left: 125px;
+}
+
+.chlamydia-list-group--mtop {
+  margin-top: 14px !important;
+}
+
 .chlamydia-list-group__item {
   list-style-type: disc;
   margin-bottom: 10px;
@@ -1299,6 +1319,10 @@ a {
   margin-top: 45px;
 }
 
+.faq-accordians__image01 {
+  margin-top: 10px;
+}
+
 .faq-accordians .faq-answer {
   padding: 10px 30px;
   font-size: 14px;
@@ -1778,6 +1802,10 @@ a {
   margin-bottom: 0;
 }
 
+.mt-10 {
+  margin-top: 10px;
+}
+
 .mb-20 {
   margin-bottom: 20px;
 }
@@ -1802,6 +1830,22 @@ a {
   .mt-30 {
     margin-top: 20px;
   }
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+.ml-40 {
+  margin-left: 40px;
+}
+
+.ml-50 {
+  margin-left: 50px;
+}
+
+.ml-80 {
+  margin-left: 80px;
 }
 
 .w-70 {

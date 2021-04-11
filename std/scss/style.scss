@@ -405,6 +405,21 @@ $testing-color2 99%;
     @media #{$media-tab} {
         padding-left: 0px;
     }
+    &__item--order {
+        list-style: decimal !important;
+    }
+    &--orderlist {
+        padding: 0px 0px 0px 66px !important;
+    }
+    &--innerlist {
+        margin-left: 15px;
+    }
+    &--mrleft {
+        margin-left: 125px;
+    }
+    &--mtop {
+        margin-top: 14px !important;
+    }
     &__item {
         list-style-type: disc;
         margin-bottom: 10px;
@@ -1025,6 +1040,9 @@ $testing-color2 99%;
             margin-top: 45px;
         }
     }
+    &__image01 {
+        margin-top: 10px;
+    }
     .faq-answer {
         padding: 10px 30px;
         font-size: 14px;
@@ -1364,6 +1382,10 @@ $testing-color2 99%;
     margin-bottom: 0;
 }
 
+.mt-10 {
+    margin-top: 10px;
+}
+
 .mb-20 {
     margin-bottom: 20px;
 }
@@ -1385,6 +1407,22 @@ $testing-color2 99%;
     @media #{$media-tab} {
         margin-top: 20px;
     }
+}
+
+.ml-20 {
+    margin-left: 20px;
+}
+
+.ml-40 {
+    margin-left: 40px;
+}
+
+.ml-50 {
+    margin-left: 50px;
+}
+
+.ml-80 {
+    margin-left: 80px;
 }
 
 .w-70 {
