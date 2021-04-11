@@ -1437,6 +1437,10 @@ $testing-color2 99%;
 // table
 .std-table {
     border-collapse: collapse;
+    &--center {
+        margin-left: auto;
+        margin-right: auto;
+    }
     &__th {
         border: 1px solid $color-gray;
         color: $color-blue;

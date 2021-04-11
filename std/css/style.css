@@ -1864,6 +1864,11 @@ a {
   border-collapse: collapse;
 }
 
+.std-table--center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .std-table__th {
   border: 1px solid #b4c2d2;
   color: #3b6bb1;
