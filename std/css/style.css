@@ -1023,6 +1023,10 @@ a {
   }
 }
 
+.disease-box__img-mleft {
+  margin-left: 253px;
+}
+
 .disease-box__header-summary {
   color: #e8ebf3;
 }

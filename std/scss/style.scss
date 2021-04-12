@@ -805,6 +805,9 @@ $testing-color2 99%;
             padding: 0px;
         }
     }
+    &__img-mleft {
+        margin-left: 253px;
+    }
     &__header-summary {
         color: $color-halfwhite;
         @media #{$media-tab} {
